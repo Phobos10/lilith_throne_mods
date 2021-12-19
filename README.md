@@ -1,2 +1,2 @@
 # All mod by Phobos here
-https://docs.google.com/forms/d/1Ind9x673nWF3o3lBL1o6QOLj5XzIylBPuYpMaaBDIaM/edit
+https://drive.google.com/drive/folders/1n7KAw_ACSoOeiUhKhrPPfzm_V6dIiIy7
