@@ -1,0 +1,8 @@
+Mod Name: Set slave (Other)
+Mod Category: Status Effects, Items
+Description: Mods made more for editing named npc.
+Use an item to get a status effect. Activation occurs by hovering the mouse pointer over the icon of the status effect.
+Set slave: Makes everyone on the tile a slave. You should be on this tile. 
+It does not remove the attack dialog.
+Move npc: Go to the contact book, select any npc, hover over the status effect, press any button in the game for the game to process the code. Send npc home using the same principle. This is necessary so that the named npc does not lose its home. Change him and send him home if you don’t want to keep him to yourself, that most often he will be in his old place if you decide to take him a room.
+If you summon an npc into the hallway of your house, the slave menu without slave status will be available.

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		
+		<!-- Please note: Item modding is not fully complete yet, as you cannot define any enchantment effects for items. I will expand this at some point in the future, but for now, this modding framework should be enough for most uses. -->
+		
+		<!-- How attribution to the mod author (you!) should be displayed in the item's tooltip. If left blank or not included, a default attribution based on folder name will be used. (I have commented out this example, as I don't want items created by myself to have author attribution.)-->
+		<authorTag><![CDATA[Mod creater: Phobos]]></authorTag>
+		
+		<!-- How much this item is worth. -->
+		<value>1</value> 
+		
+		<!-- What's appended before the item's name in an instance of "Innoxia has X Breeder Pill", where X is the determiner. This will usually be either "a" or "an", but for other items may be different.
+		An example might be: "Innoxia is holding X scissors", where X (the determiner) would now need to be "a pair of". -->
+		<determiner><![CDATA[a]]></determiner>
+		
+		<!-- The name of this item. -->
+		<name><![CDATA[food convector]]></name>
+		
+		<!-- The plural name of this item. If pluralByDefault's "false" is changed to "true", then the game will always the plural name when referring to this item. -->
+		<namePlural pluralByDefault="false"><![CDATA[food convector]]></namePlural>
+		
+		<!-- The description/lore of this item. -->
+		<description><![CDATA[Converts food in inventory to "food".]]></description> 
+		
+		<!-- How the item is used. This should be a single verb, and is used as the title of the action when using it. -->
+		<useDescriptor>use</useDescriptor>
+		
+		<!-- 'true' if this item can be used during sex. Most items have this set to 'true'. -->
+		<sexUse>fasle</sexUse>
+		
+		<!-- 'true' if this item can be either self-used or used on allies during combat. Most items have this set to 'true'. -->
+		<combatUseAllies>false</combatUseAllies>
+		
+		<!-- 'true' if this item can be used on enemies during combat. Most items have this set to 'false'. -->
+		<combatUseEnemies>false</combatUseEnemies>
+		
+		<!-- 'true' if this item is consumed on use. Most items have this set to 'true'. -->
+		<consumedOnUse>false</consumedOnUse>
+		
+		<!-- The rarity of this item. Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/master/src/com/lilithsthrone/game/inventory/Rarity.java -->
+		<rarity>COMMON</rarity> 
+		
+		<!-- The file name of this item's image when in the character's inventory. The only supported file type is .svg. I use the free program "Inkscape" to make .svg images for the game. -->
+		<imageName zLayer="0" imageRotation="0" imageSize="100">1.svg</imageName>
+		<imageName zLayer="1" imageRotation="0" imageSize="100">food.svg</imageName> 
+		
+		<!-- Your item can be coloured any way you like, but if you'd like the game to automatically re-colour your item, you can specify available colours here.
+		Red is used as base colour for the primary colour of the graphic in-game, and the game will only recognise and change the following colours:
+			#ff2a2a
+			#ff5555
+			#ff8080
+			#ffaaaa
+			#ffd5d5
+		Orange is used as base colour for the secondary colour of the graphic in-game, and the game will only recognise and change the following colours:
+			#ff7f2a
+			#ff9955
+			#ffb380
+			#ffccaa
+			#ffe6d5
+		Yellow is used as base colour for the tertiary colour of the graphic in-game, and the game will only recognise and change the following colours:
+			#ffd42a
+			#ffdd55
+			#ffe680
+			#ffeeaa
+			#fff6d5
+		ANY GRADIENTS THAT YOU USE SHOULD BE CALLED: "innoGrad1", "innoGrad2", etc.
+		You can see a visual representation of these colours here: https://www.lilithsthrone.com/wiki/doku.php?id=modding_wiki:modding:creating_clothes
+		Colour lists to be used can be found here: https://github.com/Innoxia/liliths-throne-public/blob/master/src/com/lilithsthrone/utils/ColourListPresets.java -->
+		<colourPrimary>CLOTHING_OLIVE</colourPrimary>
+		<colourSecondary/>
+		<colourTertiary/>
+		
+		<!-- You can use this section to describe any extra features of this item.
+		These effects are shown in the tooltip when the player hovers over the item icon, so try and keep them short (as they should fit on one line).
+		It should probably only be used to describe what happens in the <applyEffects> element.
+		No characters are passed in as parsing arguments, so you should NOT use any character-specific parsing elements (such as [npc.name]). -->
+		<effectTooltipLines>
+			<line><![CDATA[
+				Converts food in inventory to "food"
+			]]></line>
+		</effectTooltipLines>
+		
+		<!-- This is what is called and parsed every time this item is used on someone.
+		The character being subjected to the effects is given the tag 'npc', while the character using the item on the target is 'npc2'.
+		If self-using the item, npc and npc2 will be the same character.
+		All of the returned text is displayed to the player. [#npc.incrementVaginaCapacity(1)] [#npc.incrementAssCapacity(1)] [#npc.incrementFaceCapacity(1)] -->
+		<applyEffects><![CDATA[	
+			#IF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_hyena_bone_crunchers)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_hyena_bone_crunchers),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Bone Crunchers)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_dsg_race_raccoon_popcorn)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_dsg_race_raccoon_popcorn),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Popcorn)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_dsg_race_ferret_sausages)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_dsg_race_ferret_sausages),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Sausages)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_dsg_race_shark_tuna_sashimi)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_dsg_race_shark_tuna_sashimi),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Tuna Sashimi)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_dsg_race_otter_fish_and_chips)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_dsg_race_otter_fish_and_chips),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Fish and Chips)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_dsg_race_gryphon_pate_and_crackers)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_dsg_race_gryphon_pate_and_crackers),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Pate and Crackers)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>				
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_dsg_race_bear_honey_bread)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_dsg_race_bear_honey_bread),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Honey Bread)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>			
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_NoStepOnSnek_race_snake_eggs)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_NoStepOnSnek_race_snake_eggs),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Snake Eggs)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_NoStepOnSnek_race_octopus_shrimp_cocktail)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_NoStepOnSnek_race_octopus_shrimp_cocktail),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Shrimp Cocktail)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_NoStepOnSnek_race_capybara_brownie)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_NoStepOnSnek_race_capybara_brownie),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Chocolate Brownie)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_charisma_race_spider_chocolate_coated_cocoa_beans)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_charisma_race_spider_chocolate_coated_cocoa_beans),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Chocolate Coated Coffee Beans)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_alligator_gators_gumbo)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_alligator_gators_gumbo),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Gators Gumbo)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_rabbit_bunny_carrot_cake)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_rabbit_bunny_carrot_cake),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Bunny Carrot-Cake)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_reindeer_sugar_cookie)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_reindeer_sugar_cookie),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Sugar Cookie)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_wolf_meat_and_marrow)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_wolf_meat_and_marrow),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Meat and Marrow)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_squirrel_round_nuts)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_squirrel_round_nuts),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Round Nuts)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_dog_canine_crunch)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_dog_canine_crunch),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Canine Crunch)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_panther_panthers_delight)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_panther_panthers_delight),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Panthers Delight)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_rat_brown_rats_burger)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_rat_brown_rats_burger),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Brown Rats Burger)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_pig_oinkers_fries)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_pig_oinkers_fries),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Oinkers Fries)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_cat_kittys_reward)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_cat_kittys_reward),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Kittys Reward)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_badger_berry_trifle)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_badger_berry_trifle),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Berry Trifle)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_cow_bubble_cream)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_cow_bubble_cream),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Bubble Cream)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_fox_chicken_pot_pie)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_fox_chicken_pot_pie),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Chicken Pot Pie)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_sheep_woolly_goodness)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_sheep_woolly_goodness),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Woolly Goodness)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_harpy_bubblegum_lollipop)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_harpy_bubblegum_lollipop),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Bubblegum Lollipop)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>				
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_horse_sugar_carrot_cube)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_horse_sugar_carrot_cube),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Sugar Carrot Cube)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSEIF (npc.getInventory().getItemCount(itemGen.generateItem(ITEM_innoxia_race_none_mince_pie)) > 0)
+				[##npc.addItem(game.getItemGen().generateItem(ITEM_Phobos_sl_food),false)]
+				[##npc.removeItem(itemGen.generateItem(ITEM_innoxia_race_none_mince_pie),1)]
+				<p style='text-align:center; margin-top:0; padding-top:0;'>
+				[style.boldBad(Item removed from your inventory:)] [style.bold(Mince Pie)]
+				<br>[style.boldGood(Item removed from your inventory:)] [style.bold(Food)]
+				</p>	
+			#ELSE
+			<p style='text-align:center; margin-top:0; padding-top:0;'>
+			[style.boldBad([npc.Name] don't have suitable food.)]
+			</p>
+			#ENDIF
+		]]></applyEffects>
+	
+		<!-- Special item tags that apply to this item. Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/master/src/com/lilithsthrone/game/inventory/ItemTag.java -->
+		<itemTags>
+			<tag>SOLD_BY_RALPH</tag>
+		</itemTags>
+		
+	</coreAttributes>
+
+	<!-- Descriptions that are displayed when using this item.
+	'selfUse' is used when a character uses this item on themselves, and 'otherUse' when using the item on someone else.
+	You must define at least one of both of these elements, and if more than one of each is defined, then the use description will be chosen randomly from all those you've defined. -->
+	
+	<useDescriptions>
+		<selfUse><![CDATA[
+			[npc.Name] use it.
+		]]></selfUse>
+		<otherUse><![CDATA[
+			[npc.Name] give it to use [npc2.Name].
+		]]></otherUse>
+	</useDescriptions>
+
+	
+</item>

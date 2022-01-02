@@ -1,0 +1,3 @@
+Mod Name: Feral group (Other)
+Mod Category: Status Effects
+Description: Adds 50% chance meeting a group of feral (quadrupedal) wolves, dogs or horses in Submission at meeting points with groups of imps. It replaces imps on the appropriate species. Fetishes, gender, the size of the genitals is configured manually.

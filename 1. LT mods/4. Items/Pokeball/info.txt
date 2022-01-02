@@ -1,0 +1,4 @@
+Mod Name: Pokeball
+Mod Category: Items
+Description: This is a working 6 pokeballs. Instructions for use are in the description of the items.
+Doesn't work on prostitutes.

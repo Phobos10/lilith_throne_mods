@@ -1,0 +1,3 @@
+Mod Name: More cum regeneration
+Mod Category: Items/Status Effect
+Description: Gives cum regeneration in the amount of 1 liter per minute (16 ml per second). Apply it to whoever you want. It does not reset the current regeneration. You can change 1 liter to other data in the status effect in [##var A = 1000]

@@ -1,0 +1,3 @@
+Mod Name: More inventory
+Mod Category: Item
+Description: Remote access to inventory. Name the npc Inventory 1, 2 or 3. You can export such a character in the City Hall to get inventory in the new game. Actual for those who have little space in their native inventory.

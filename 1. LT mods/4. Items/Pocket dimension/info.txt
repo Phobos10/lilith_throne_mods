@@ -1,0 +1,4 @@
+Mod Name: Pocket dimension
+Mod Category: Item
+Description: If you have little room at home for slaves or friends, you can always send them to the "pocket dimension". You can return it back through the manager people.
+Link: 

@@ -1,0 +1,5 @@
+Special Attack Mod: Armageddon
+Attack Name: Armageddon
+Category/Type: Spell
+Conditional: Learn the entire school of fire magic.
+Description: Normal damage = (Fire damage * Lvl character)/10, Critical Damage = (Fire Damag * Character lvl)/5, Mana cost = (Character level*10). Maximum normal damage 500, critical 1000.

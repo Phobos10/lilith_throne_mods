@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<coveringType>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- See fur.xml for a fully-commented coveringType example. -->
+	
+	<category>EYE_IRIS</category>
+	
+	<determiner><![CDATA[a pair of]]></determiner>
+	<name><![CDATA[eye]]></name>
+	<namePlural pluralByDefault="true"><![CDATA[eyes]]></namePlural> 
+	
+	<naturalCoveringModifiers>
+		<modifier>EYE</modifier>
+	</naturalCoveringModifiers>
+	
+	<extraCoveringModifiers/>
+	
+	<naturalPatterns/>
+
+	<extraPatterns/>
+	
+	<naturalColoursPrimary>
+	<colour>COVERING_BLACK</colour>
+	</naturalColoursPrimary> 
+	<extraColoursPrimary values="dyePredatorIrisColours"/>
+	
+	<naturalColoursSecondary>
+	<colour>COVERING_BLACK</colour>
+	</naturalColoursSecondary>
+	<extraColoursSecondary values="dyePredatorIrisColours"/>
+	
+</coveringType>

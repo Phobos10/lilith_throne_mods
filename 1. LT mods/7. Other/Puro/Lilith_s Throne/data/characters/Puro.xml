@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<exportedCharacter>
+  <character>
+    <!--If you want to edit any of these values, just be warned that it might break the game...-->
+    <core>
+      <id value="PlayerCharacter"/>
+      <pathName value="com.lilithsthrone.game.character.PlayerCharacter"/>
+      <name nameAndrogynous="Puro" nameFeminine="Puro" nameMasculine="Puro"/>
+      <surname value=""/>
+      <genericName value=""/>
+      <description value="This creature is not of this world."/>
+      <playerKnowsName value="true"/>
+      <playerOnFirstNameTerms value="false"/>
+      <raceConcealed value="false"/>
+      <level value="1"/>
+      <ageAppearanceDifference value="-3"/>
+      <yearOfBirth value="2003"/>
+      <monthOfBirth value="JULY"/>
+      <dayOfBirth value="19"/>
+      <version value="0.4.1"/>
+      <history value="STUDENT"/>
+      <elemental value=""/>
+      <elementalSummoned value="false"/>
+      <combatBehaviour value="BALANCED"/>
+      <lastTimeHadSex value="-1"/>
+      <lastTimeOrgasmed value="-1"/>
+      <desiredJobs/>
+      <petNames/>
+      <personality>
+        <trait>NAIVE</trait>
+        <trait>KIND</trait>
+      </personality>
+      <sexualOrientation value="AMBIPHILIC"/>
+      <obedience value="0.0"/>
+      <genderIdentity value="M_P_MALE"/>
+      <foughtPlayerCount value="0"/>
+      <lostCombatCount value="0"/>
+      <wonCombatCount value="0"/>
+      <experience value="5"/>
+      <perkPoints value="0"/>
+      <perkCategoryPoints/>
+      <health value="35.0"/>
+      <mana value="11.0"/>
+      <areasKnownByCharacters/>
+    </core>
+    <locationInformation>
+      <worldLocation value="LILAYAS_HOUSE_FIRST_FLOOR"/>
+      <homeWorldLocation value="MUSEUM"/>
+      <location x="4" y="2"/>
+      <homeLocation x="2" y="0"/>
+      <globalLocation x="20" y="17"/>
+    </locationInformation>
+    <body>
+      <bodyCore bodyMaterial="RUBBER" bodySize="70" femininity="15" feral="false" genitalArrangement="NORMAL" height="185" muscle="90" piercedStomach="false" pubicHair="ZERO_NONE" takesAfterMother="true" version="0.4.1">
+        <bodyCovering c1="SKIN_LIGHT" c2="SKIN_LIGHT" modifier="SMOOTH" pattern="NONE" type="HUMAN"/>
+        <bodyCovering c1="COVERING_JET_BLACK" c2="COVERING_WHITE" modifier="SHAGGY" pattern="NONE" type="LYCAN_FUR"/>
+        <bodyCovering c1="SKIN_JET_BLACK" c2="ORIFICE_INTERIOR" modifier="SMOOTH" pattern="NONE" type="PENIS"/>
+        <bodyCovering c1="SKIN_JET_BLACK" c2="SKIN_JET_BLACK" modifier="SMOOTH" pattern="ORIFICE_ANUS" type="ANUS"/>
+        <bodyCovering c1="SKIN_JET_BLACK" c2="SKIN_JET_BLACK" modifier="SMOOTH" pattern="ORIFICE_MOUTH" type="MOUTH"/>
+        <bodyCovering c1="SKIN_JET_BLACK" c2="SKIN_JET_BLACK" modifier="SMOOTH" pattern="ORIFICE_NIPPLE" type="NIPPLES"/>
+        <bodyCovering c1="SKIN_LIGHT" c2="ORIFICE_INTERIOR" modifier="SMOOTH" pattern="ORIFICE_NIPPLE_CROTCH" type="NIPPLES_CROTCH"/>
+        <bodyCovering c1="SKIN_JET_BLACK" c2="SKIN_JET_BLACK" modifier="SMOOTH" pattern="ORIFICE_VAGINA" type="VAGINA"/>
+        <bodyCovering c1="SKIN_LIGHT" c2="ORIFICE_INTERIOR" modifier="SMOOTH" pattern="ORIFICE_SPINNERET" type="SPINNERET"/>
+        <bodyCovering c1="COVERING_BROWN" c2="COVERING_WHITE" modifier="SMOOTH" pattern="NONE" type="ANTENNA"/>
+        <bodyCovering c1="COVERING_WHITE" c2="COVERING_WHITE" modifier="SMOOTH" pattern="NONE" type="HORN"/>
+        <bodyCovering c1="SKIN_JET_BLACK" c2="ORIFICE_INTERIOR" modifier="SMOOTH" pattern="NONE" type="TONGUE"/>
+        <bodyCovering c1="COVERING_BROWN" c2="COVERING_BROWN" modifier="SMOOTH" pattern="NONE" type="HAIR_HUMAN"/>
+        <bodyCovering c1="COVERING_JET_BLACK" c2="COVERING_WHITE" modifier="FURRY" pattern="NONE" type="HAIR_LYCAN_FUR"/>
+        <bodyCovering c1="COVERING_BROWN" c2="COVERING_BROWN" modifier="COARSE" pattern="NONE" type="BODY_HAIR_HUMAN"/>
+        <bodyCovering c1="COVERING_JET_BLACK" c2="COVERING_WHITE" modifier="FURRY" pattern="NONE" type="BODY_HAIR_LYCAN_FUR"/>
+        <bodyCovering c1="EYE_BROWN" c2="EYE_BROWN" modifier="EYE" pattern="EYE_IRISES" type="EYE_HUMAN"/>
+        <bodyCovering c1="EYE_WHITE" c2="EYE_BROWN" modifier="EYE" pattern="EYE_IRISES" type="EYE_LYCAN"/>
+        <bodyCovering c1="EYE_WHITE" c2="EYE_BLACK" modifier="EYE" pattern="EYE_PUPILS" type="EYE_PUPILS"/>
+        <bodyCovering c1="EYE_PITCH_BLACK" c2="EYE_WHITE" modifier="EYE" pattern="EYE_SCLERA" type="EYE_SCLERA"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_WHITE" modifier="FLUID" pattern="FLUID" type="CUM"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_CLEAR" modifier="FLUID" pattern="FLUID" type="GIRL_CUM"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_WHITE" modifier="FLUID" pattern="FLUID" type="MILK"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="NONE" type="RUBBER_MAIN_SKIN"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="NONE" type="RUBBER_MAIN_HAIR"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="NONE" type="RUBBER_MAIN_FUR"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="NONE" type="RUBBER_MAIN_SCALES"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="NONE" type="RUBBER_MAIN_FEATHER"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="NONE" type="RUBBER_MAIN_CHITIN"/>
+        <bodyCovering c1="COVERING_WHITE" c2="COVERING_BLACK" modifier="GLOSSY" pattern="EYE_IRISES" type="RUBBER_EYE_IRIS"/>
+        <bodyCovering c1="COVERING_WHITE" c2="COVERING_BLACK" modifier="GLOSSY" pattern="EYE_PUPILS" type="RUBBER_EYE_PUPIL"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="EYE_SCLERA" type="RUBBER_EYE_SCLERA"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="NONE" type="RUBBER_ANTENNAE"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="NONE" type="RUBBER_HORN"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="NONE" type="RUBBER_ANTLER"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="NONE" type="RUBBER_HAIR"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="ORIFICE_ANUS" type="RUBBER_ANUS"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="ORIFICE_MOUTH" type="RUBBER_MOUTH"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="NONE" type="RUBBER_TONGUE"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="ORIFICE_NIPPLE" type="RUBBER_NIPPLE"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="ORIFICE_NIPPLE_CROTCH" type="RUBBER_NIPPLE_CROTCH"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="ORIFICE_VAGINA" type="RUBBER_VAGINA"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="NONE" type="RUBBER_PENIS"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="ORIFICE_SPINNERET" type="RUBBER_SPINNERET"/>
+        <bodyCovering c1="COVERING_BLACK" c2="COVERING_BLACK" modifier="GLOSSY" pattern="NONE" type="RUBBER_BODY_HAIR"/>
+      </bodyCore>
+      <antennae antennaePerRow="2" length="22" rows="1" type="NONE"/>
+      <arm rows="1" type="WOLF_MORPH" underarmHair="FOUR_NATURAL"/>
+      <ass assSize="2" hipSize="2" type="WOLF_MORPH"/>
+      <anus assHair="ZERO_NONE" bleached="false" capacity="20.0" depth="7" elasticity="7" plasticity="7" stretchedCapacity="20.0" virgin="true" wetness="7">
+        <anusModifiers/>
+      </anus>
+      <breasts milkRegeneration="500" milkStorage="0" nippleCountPerBreast="1" rows="1" shape="ROUND" size="0" storedMilk="0.0" type="WOLF_MORPH"/>
+      <nipples areolaeShape="NORMAL" areolaeSize="0" capacity="20.0" depth="7" elasticity="7" nippleShape="NORMAL" nippleSize="0" pierced="false" plasticity="7" stretchedCapacity="20.0" virgin="true">
+        <nippleModifiers/>
+      </nipples>
+      <milk flavour="MILK" type="MILK_WOLF_MORPH">
+        <milkModifiers/>
+      </milk>
+      <breastsCrotch milkRegeneration="500" milkStorage="0" nippleCountPerBreast="1" rows="2" shape="POINTY" size="4" storedMilk="0.0" type="NONE"/>
+      <nipplesCrotch areolaeShape="NORMAL" areolaeSize="2" capacity="0.5" depth="2" elasticity="3" nippleShape="NORMAL" nippleSize="2" pierced="false" plasticity="3" stretchedCapacity="0.5" virgin="true">
+        <nippleModifiers/>
+      </nipplesCrotch>
+      <milkCrotch flavour="MILK" type="MILK_HUMAN">
+        <milkModifiers/>
+      </milkCrotch>
+      <ear pierced="false" type="WOLF_MORPH"/>
+      <eye eyePairs="1" irisShape="ROUND" pupilShape="ROUND" type="WOLF_MORPH"/>
+      <face facialHair="ZERO_NONE" piercedNose="false" type="WOLF_MORPH"/>
+      <mouth capacity="20.0" depth="7" elasticity="7" lipSize="1" piercedLip="false" plasticity="7" stretchedCapacity="20.0" virgin="true" wetness="7">
+        <mouthModifiers/>
+      </mouth>
+      <tongue piercedTongue="false" tongueLength="8">
+        <tongueModifiers FLAT="true" WIDE="true"/>
+      </tongue>
+      <hair hairStyle="MESSY" length="0" type="WOLF_MORPH"/>
+      <horn hornsPerRow="2" length="2" rows="1" type="NONE"/>
+      <leg configuration="BIPEDAL" footStructure="DIGITIGRADE" type="WOLF_MORPH"/>
+      <penis capacity="20.0" depth="7" elasticity="7" girth="3" pierced="false" plasticity="7" size="25" stretchedCapacity="20.0" type="WOLF_MORPH" urethraVirgin="true" virgin="true">
+        <penisModifiers KNOTTED="true" SHEATHED="true" TAPERED="true"/>
+        <urethraModifiers/>
+      </penis>
+      <testicles cumExpulsion="100" cumRegeneration="432000" cumStorage="1000" internal="false" numberOfTesticles="2" storedCum="1000.0" testicleSize="3"/>
+      <cum flavour="CUM" type="CUM_WOLF_MORPH">
+        <cumModifiers MUSKY="true" SLIMY="true" STICKY="true"/>
+      </cum>
+      <spinneret capacity="1.75" depth="2" elasticity="4" plasticity="3" stretchedCapacity="1.75" virgin="true" wetness="1">
+        <spinneretModifiers/>
+      </spinneret>
+      <torso type="WOLF_MORPH"/>
+      <tail count="1" girth="4" length="0.4" type="WOLF_MORPH"/>
+      <tentacle count="1" girth="3" length="0.0" type="NONE"/>
+      <vagina capacity="20.0" clitGirth="0" clitSize="0" depth="2" eggLayer="false" elasticity="7" hymen="true" labiaSize="0" pierced="false" plasticity="7" squirter="false" stretchedCapacity="20.0" type="NONE" urethraCapacity="20.0" urethraDepth="2" urethraElasticity="7" urethraPlasticity="7" urethraStretchedCapacity="20.0" urethraVirgin="true" virgin="true" wetness="7">
+        <clitModifiers/>
+        <vaginaModifiers/>
+        <urethraModifiers/>
+      </vagina>
+      <girlcum flavour="GIRL_CUM" type="GIRL_CUM_HUMAN">
+        <girlcumModifiers SLIMY="true"/>
+      </girlcum>
+      <wing size="0" type="NONE"/>
+    </body>
+    <characterInventory>
+      <maxInventorySpace value="120"/>
+      <money value="0"/>
+      <essenceCount value="0"/>
+      <dirtySlots/>
+      <clothingEquipped>
+        <clothing enchantmentKnown="true" id="Phobos_changed_mask" isDirty="false" name="mask" slotEquippedTo="EYES">
+          <colours>
+            <colour i="0">CLOTHING_WHITE</colour>
+          </colours>
+        </clothing>
+      </clothingEquipped>
+    </characterInventory>
+    <attributes>
+      <attribute type="HEALTH_MAXIMUM" value="1.0"/>
+      <attribute type="MANA_MAXIMUM" value="1.0"/>
+      <attribute type="LUST" value="0.72"/>
+    </attributes>
+    <potionAttributes/>
+    <traits/>
+    <specialPerks/>
+    <perks>
+      <perk row="1" type="PHYSICAL_BASE"/>
+      <perk row="1" type="ARCANE_BASE"/>
+      <perk row="1" type="LEWD_KNOWLEDGE"/>
+    </perks>
+    <knownSpells/>
+    <spellUpgrades/>
+    <spellUpgradePoints>
+      <upgradeEntry points="0" school="EARTH"/>
+      <upgradeEntry points="0" school="WATER"/>
+      <upgradeEntry points="0" school="AIR"/>
+      <upgradeEntry points="0" school="FIRE"/>
+      <upgradeEntry points="0" school="ARCANE"/>
+    </spellUpgradePoints>
+    <fetishes/>
+    <fetishDesire/>
+    <fetishExperience/>
+    <statusEffects>
+      <statusEffect lta="78540" sp="40" sr="-1" type="CORRUPTION_PERK_0"/>
+      <statusEffect lta="78540" sp="40" sr="-1" type="AROUSAL_PERK_0"/>
+      <statusEffect lta="78540" sp="40" sr="-1" type="LUST_PERK_0"/>
+      <statusEffect lta="78540" sp="40" sr="-1" type="ORIENTATION_AMBIPHILIC"/>
+      <statusEffect lta="78540" sp="40" sr="-1" type="COMPANIONS_LEAVING"/>
+      <statusEffect lta="78540" sp="40" sr="-1" type="INTELLIGENCE_PERK_2"/>
+      <statusEffect lta="78540" sp="40" sr="-1" type="SUBSPECIES_BONUS"/>
+      <statusEffect lta="78540" sp="40" sr="-1" type="CUM_FULL"/>
+      <statusEffect lta="78540" sp="40" sr="-1" type="EXPOSED"/>
+      <statusEffect lta="78540" sp="40" sr="-1" type="PHYSIQUE_PERK_1"/>
+      <statusEffect lta="78540" sp="40" sr="-1" type="WEATHER_STORM_PROTECTED"/>
+    </statusEffects>
+    <knownMoves/>
+    <equippedMoves>
+      <move type="BASIC_STRIKE"/>
+      <move type="BASIC_TWIN_STRIKE"/>
+      <move type="BASIC_BLOCK"/>
+      <move type="BASIC_TEASE"/>
+      <move type="BASIC_TEASE_BLOCK"/>
+    </equippedMoves>
+    <characterRelationships/>
+    <pregnancy littersGenerated="0" timeProgressedToFinalPregnancyStage="1"/>
+    <family>
+      <motherId value=""/>
+      <motherName value="???"/>
+      <motherFemininity value="FEMININE"/>
+      <motherSubspecies value="HUMAN"/>
+      <fatherId value=""/>
+      <fatherName value="???"/>
+      <fatherFemininity value="MASCULINE"/>
+      <fatherSubspecies value="HUMAN"/>
+      <yearOfConception value="1998"/>
+      <monthOfConception value="OCTOBER"/>
+      <dayOfConception value="12"/>
+    </family>
+    <slavery>
+      <slavesOwned/>
+      <owner value=""/>
+    </slavery>
+    <companions>
+      <companionsFollowing/>
+      <partyLeader value=""/>
+      <maxCompanions value="1"/>
+    </companions>
+    <sexStats>
+      <fluidsStoredMap>
+        <entry orifice="VAGINA"/>
+        <entry orifice="NIPPLE"/>
+        <entry orifice="SPINNERET"/>
+        <entry orifice="URETHRA_VAGINA"/>
+        <entry orifice="NIPPLE_CROTCH"/>
+        <entry orifice="URETHRA_PENIS"/>
+        <entry orifice="ANUS"/>
+        <entry orifice="MOUTH"/>
+      </fluidsStoredMap>
+      <daysOrgasmCount value="0"/>
+      <daysOrgasmCountRecord value="0"/>
+      <totalOrgasmCount value="0"/>
+      <sexPartners>
+        <sexCount asDom="0" asSub="0" consensual="0" id="unknown">
+          <sexType other="FINGER" participant="NORMAL" self="VAGINA" sex="0"/>
+          <sexType other="TONGUE" participant="NORMAL" self="VAGINA" sex="0"/>
+          <sexType other="PENIS" participant="NORMAL" self="VAGINA" sex="0"/>
+        </sexCount>
+      </sexPartners>
+      <virginityLosses/>
+    </sexStats>
+    <addictionsCore alcoholLevel="0.0">
+      <addictions/>
+      <psychoactiveFluids/>
+    </addictionsCore>
+    <playerSpecific>
+      <title value="The Human"/>
+      <karma value="0"/>
+      <questUpdates/>
+      <mainQuestUpdated value="true"/>
+      <sideQuestUpdated value="false"/>
+      <relationshipQuestUpdated value="false"/>
+      <raceBooksDiscovered/>
+      <charactersEncountered>
+        <id value="-1,Lilaya"/>
+        <id value="-1,Rose"/>
+      </charactersEncountered>
+      <questMap>
+        <entry q0="MAIN_PROLOGUE" q1="MAIN_1_A_LILAYAS_TESTS" questLine="MAIN"/>
+      </questMap>
+      <questFailedMap/>
+      <friendlyOccupants/>
+      <worldsVisited>
+        <world id="LILAYAS_HOUSE_FIRST_FLOOR"/>
+        <world id="MUSEUM"/>
+      </worldsVisited>
+      <itemsDiscovered/>
+      <weaponsDiscovered>
+        <type>innoxia_crystal_rare</type>
+      </weaponsDiscovered>
+      <clothingDiscovered>
+        <type>innoxia_torso_short_sleeved_shirt</type>
+        <type>innoxia_foot_mens_smart_shoes</type>
+        <type>innoxia_leg_trousers</type>
+        <type>WRIST_MENS_WATCH</type>
+        <type>Phobos_changed_mask</type>
+        <type>innoxia_sock_socks</type>
+        <type>GROIN_BOXERS</type>
+        <type>innoxia_finger_ring</type>
+      </clothingDiscovered>
+      <racesDiscovered>
+        <race>HUMAN</race>
+        <race>CAT_MORPH</race>
+        <race>HALF_DEMON</race>
+      </racesDiscovered>
+      <racesDiscoveredAdvanced/>
+    </playerSpecific>
+  </character>
+</exportedCharacter>

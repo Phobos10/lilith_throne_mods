@@ -1,0 +1,4 @@
+Mod Name: Move npc (Other)
+Mod Category: Item/Status Effect
+Description: If you don't move unnecessary npc with this Pocket dimension mod, then you can endlessly fill one room with npc. Or collect all the robbers in one place.
+Instructions after using the item.

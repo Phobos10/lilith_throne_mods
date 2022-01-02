@@ -1,0 +1,3 @@
+Combat Move Mod: Healing for npc
+Name Combat Move: Healing
+Description: Made for the healing of robbers. They will use this. Can be used by anyone, but not the player.
