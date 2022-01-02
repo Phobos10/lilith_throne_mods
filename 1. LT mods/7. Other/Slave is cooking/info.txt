@@ -1,6 +1,0 @@
-Mod Name: Slave is cooking (Other)
-Mod Category: Status Effects
-Description: Works for the listed races in game version 0.4.1.1. 
-Every 30 minutes, the slave creates one drink and food for his subrace. This works if the slave is in the kitchen, and not somewhere else (if you gave the slave a job and went to bed without waiting for him at the workplace, then nothing will happen).
-Items can be taken from their inventory.
-Spawn items on the kitchen floor only works if the player is in a location with a kitchen, so all things are in the inventory of the slaves. 

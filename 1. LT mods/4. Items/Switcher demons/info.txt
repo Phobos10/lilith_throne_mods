@@ -1,3 +1,0 @@
-Mod Name: Switcher demons
-Mod Category: Items
-Description: Switches demons and works for feral. Does not give a purple background to race icons and does not replace body parts.

@@ -1,3 +1,0 @@
-Combat Move Mod: Eye of subdue
-Name Combat Move: Eye of subdue
-Description: No longer need to have enchanted items to get a slave. Just use it in battle and they are all yours.

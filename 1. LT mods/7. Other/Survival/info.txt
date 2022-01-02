@@ -1,5 +1,0 @@
-Mod Name: Survival
-Mod Category:  Status Effects, Items
-Description: Adds player need hunger, thirst, sleep.
-Maximum level step 9.
-There are items that convert all food and water (not alcohol) for the game version v0.4. If want to convert several pieces at once, take several converters.

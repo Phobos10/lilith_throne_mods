@@ -1,5 +1,0 @@
-Combat Move Mod: Cold Water
-Category/Type: Spell/Defend
-Description: Removes lust and provides a temporary shield against seduction.
-Maximum: -100 lust, -100 mana, +100 lust shield. 
-If you happen to have Core Defense Seduction (core lust sheald), then don't download this mod.

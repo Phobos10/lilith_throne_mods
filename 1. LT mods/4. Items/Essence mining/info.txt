@@ -1,3 +1,0 @@
-Mod Name: Essence mining
-Mod Category: Items
-Description: There are three levels of "essence mining" 1/5/10 essence every 12 hours. The more you collect, the more you will get. You can enable mining with any "essence mining". A small chance to get it from the Rogue. If the enemy has "essence mining", you will see an icon in his status block.

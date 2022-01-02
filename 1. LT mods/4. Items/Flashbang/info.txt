@@ -1,3 +1,0 @@
-Mod Name: Flashbang
-Mod Category: Items
-Description: Stuns the enemy for 3 turns. There is a box with 50 pieces.

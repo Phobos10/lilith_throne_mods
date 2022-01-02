@@ -1,6 +1,0 @@
-Mod Name: Faithful slave forever
-Mod Category: Clothing
-Description: Eternal loyal relationship with slaves.
-If you like, you can use <clothingSet> Faithful slave forever </clothingSet> on other things, but remember to move setBonuses and statusEffects to make the set work.
-Not need more furnishing a room, monitor relationships. Always loyal! 
-This is one of the mod options for increasing affection and obedience.

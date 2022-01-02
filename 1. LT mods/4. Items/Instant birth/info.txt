@@ -1,3 +1,0 @@
-Mod Name: Instant birth
-Mod Category: Items
-Description: If you are pregnant and use item, check baby in "Pregnancy stats".

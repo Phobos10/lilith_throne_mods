@@ -1,5 +1,0 @@
-Mod Name: Up affection
-Mod Category: Item
-Description: Allows increase affection and obedience on 10 in the dialogue or outside of it, being with the desired npc (all npc) on one tile. Just hover your mouse over the status effect as many times as needed, then, if you in the dialog, open and close the phone, for the game to process the changes.
-Use an item to get a status effect.
-I removed the Psh-Psh mod, the new mod is more flexible.

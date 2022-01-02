@@ -1,3 +1,0 @@
-Mod Name: Level alignment for slave (Other)
-Mod Category: Status Effects
-Description: All of your slaves get a level equal to your character. You don't need to use anything.

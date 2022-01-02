@@ -1,4 +1,0 @@
-Special Attack Mod: Poisonous Breath
-Attack Name: Poisonous Breath
-Category/Type: Special/Attack
-Description: Maximum: 0/100/150/200/250/300. 

@@ -1,3 +1,0 @@
-Mod Name: Filly points up
-Mod Category: Items
-Description: Gives 1000000 filly points.

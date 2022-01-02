@@ -1,3 +1,0 @@
-Mod Name: Converting currency
-Mod Category: Item/Reusable
-Description: Game course 1:40 (Essence:Flame)

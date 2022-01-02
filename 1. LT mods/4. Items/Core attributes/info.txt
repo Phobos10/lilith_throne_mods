@@ -1,3 +1,0 @@
-Mod Name: Core attributes
-Mod Category: Items
-Description: Gives core attributes. 21 attributes - 21 items. Corruption, action points, lust not added. A large stack of items gives more attributes.
