@@ -1,0 +1,4 @@
+Mod Name: Back in time
+Mod Category: Items
+Description: Several hours late? Take time back. Don't want to wait for the next date? Take time back.
+Rewinds time 1 hour back. You can use several items at once.

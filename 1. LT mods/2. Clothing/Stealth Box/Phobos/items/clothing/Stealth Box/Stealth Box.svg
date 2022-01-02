@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="Stealth Box.svg"
+   viewBox="0 0 725.66931 725.66931"
+   id="svg19"
+   height=""
+   width=""
+   version="1.1">
+  <metadata
+     id="metadata25">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs23" />
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     inkscape:current-layer="svg19"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="372.78571"
+     inkscape:cx="367.17567"
+     inkscape:zoom="0.88601185"
+     showgrid="false"
+     id="namedview21"
+     inkscape:window-height="746"
+     inkscape:window-width="1299"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     id="Layer1000">
+    <path
+       inkscape:connector-curvature="0"
+       id="path2"
+       style="fill:#ff8080;fill-rule:evenodd;stroke:#1b1918;stroke-width:0.5669;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;fill-opacity:1"
+       d="M 716.1497,427.4 587.5458,465.7925 412.3237,415.9968 540.9276,377.6044 Z" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4"
+       style="fill:#ff8080;fill-rule:evenodd;stroke:#1b1918;stroke-width:0.5669;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;fill-opacity:1"
+       d="m 52.9609,475.0574 275.9163,-82.7743 83.446,23.7137 -275.9158,82.7743 z" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6"
+       style="fill:#ff8080;fill-rule:evenodd;stroke:#1b1918;stroke-width:0.5669;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;fill-opacity:1"
+       d="m 136.4074,207.5093 175.2221,49.8669 275.9163,-82.7747 -175.2221,-49.8669 z m 275.9163,-82.7747 175.2221,49.8669" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path8"
+       style="fill:#ff8080;fill-rule:evenodd;stroke:#1b1918;stroke-width:0.5669;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;fill-opacity:1"
+       d="M 311.6295,257.3762 V 548.5667 L 136.4074,498.7711 V 207.5093 Z" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path10"
+       style="fill:#ff8080;fill-rule:evenodd;stroke:#1b1918;stroke-width:0.5669;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;fill-opacity:1"
+       d="M 587.5458,174.6015 311.6295,257.3762 V 548.5667 L 587.5458,465.792 Z" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path12"
+       style="fill:#ff8080;fill-rule:evenodd;stroke:#1b1918;stroke-width:0.5669;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;fill-opacity:1"
+       d="M 311.6295,548.5667 183.0256,586.9592 7.8035,537.1635 136.4074,498.7711 Z" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path14"
+       style="fill:#ff8080;fill-rule:evenodd;stroke:#1b1918;stroke-width:0.5669;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;fill-opacity:1"
+       d="m 311.6295,548.5667 275.9163,-82.7742 83.4461,23.7137 -275.9159,82.7742 z" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path16"
+       style="fill:#1b1918;fill-rule:evenodd;stroke:#1b1918;stroke-width:0.5669;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
+       d="m 245.9214,290.9987 v 13.8812 L 202.116,292.4135 v -13.8813 z" />
+  </g>
+</svg>

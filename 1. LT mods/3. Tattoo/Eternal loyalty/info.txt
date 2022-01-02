@@ -1,0 +1,4 @@
+Mod Name: Eternal loyalty
+Mod Category: Tattoo
+Description: Simply invisible tattoo that makes your slaves loyal. 
+This is one of the mod options for increasing affection and obedience.

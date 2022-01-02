@@ -1,0 +1,17 @@
+Mod Name: More cum for npc (Other)
+Mod Category: Status Effect
+Description: 
+Gives robbers new characteristics of cum:
+Expulsion: 100%
+Morph:
+Storage: 250-500 ml.
+Regeneration: 10-50 ml/min.
+Morph horse:
+Storage: 500-750 ml.
+Regeneration: 50-100 ml/min.
+Taur:
+Storage: 650-1000 ml.
+Regeneration: 100-200 ml/min.
+Taur-horse:
+Storage: 750-2000 ml.
+Regeneration: 100-200 ml/min.

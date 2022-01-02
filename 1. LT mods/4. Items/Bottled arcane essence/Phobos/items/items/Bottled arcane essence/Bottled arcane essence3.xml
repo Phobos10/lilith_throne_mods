@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<item>
+	<coreAttributes>
+		
+		<authorTag><![CDATA[Mod creater: Phobos.]]></authorTag>
+		<value>200000</value>
+		<determiner><![CDATA[an]]></determiner>
+		
+		<!-- The name of this item. -->
+		<name><![CDATA[Bottled arcane essence 3 lvl]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Bottled arcane essences]]></namePlural>
+		<description><![CDATA[Gives arcane essence.]]></description> 
+		<useDescriptor>apply</useDescriptor>
+		<sexUse>true</sexUse>
+		<combatUseAllies>true</combatUseAllies>
+		<combatUseEnemies>false</combatUseEnemies>
+		<consumedOnUse>true</consumedOnUse>
+		<rarity>COMMON</rarity>
+		<imageName>Bottled arcane essence.svg</imageName> 
+		<colourPrimary>CLOTHING_GREY_LIGHT</colourPrimary>
+		<colourSecondary>CLOTHING_PINK_LIGHT</colourSecondary>
+		<colourTertiary>CLOTHING_PURPLE</colourTertiary>
+
+		<effectTooltipLines>
+			<line><![CDATA[[style.boldGood(+5000)] [style.boldArcane(Arcane essence)]]]></line>
+		</effectTooltipLines>
+		
+		<!-- subject = npc, user = 'npc2'. ESSENCE ARCANE
+		If self-using the item, npc2==npc -->
+		<applyEffects><![CDATA[
+[##npc.setEssenceCount(npc.getEssenceCount()+5000)]	
+		<p style='text-align:center; margin-top:0; padding-top:0;'>	
+		[npc.Name] got <b>[style.boldGood(5000)]</b> <b>[style.boldArcane(arcane essence)]!</b> <br>
+		</p>		
+		]]></applyEffects>
+		
+		<itemTags>
+			<tag>ATTRIBUTE_TF_ITEM</tag>
+			<tag>SOLD_BY_VICKY</tag>
+		</itemTags>
+		
+	</coreAttributes>
+	
+</item>

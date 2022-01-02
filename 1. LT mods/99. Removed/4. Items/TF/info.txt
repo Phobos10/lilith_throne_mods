@@ -1,0 +1,3 @@
+Mod Name: TF (Items)
+Mod Category: Items/Race
+Description: The canister does not allow changing the moisture content of the holes, gives a core of corruption and need a potion to return to the flesh.  The mod gives the transformation without side effects in one click. Not actual for named npcs. 

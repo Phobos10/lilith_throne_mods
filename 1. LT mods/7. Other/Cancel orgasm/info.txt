@@ -1,0 +1,6 @@
+Mod Name: Cancel orgasm (Other)
+Mod Category: Status Effects, Items
+Description: Scrolls the orgasm timer back.
+It is relevant if the npc is limited by the orgasm limit and the player does not press the "cancel orgasm (denied)" button.
+Use an item to get a status effect. Enter sex, hover your mouse over the status effect icon as much as necessary.
+The npc status effect will break until its value is 0.

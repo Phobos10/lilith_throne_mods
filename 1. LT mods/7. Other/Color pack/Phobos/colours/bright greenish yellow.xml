@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<colour>
+	<!-- GENERAL INFORMATION: If you are unsure of anything, please use the LT Discord to ask for help! -->
+	
+	<!-- Whether this is a metallic colour or not.
+	If metallic, the game generates a metallic effect for this colour's icon. -->
+	<metallic>false</metallic>
+	
+	<!-- The name of this colour. -->
+	<name><![CDATA[bright greenish yellow]]></name>
+	
+	<!-- This colour's hex code, which is used when the game is set in the default 'dark' theme. -->
+	<colour>F4C800</colour>
+	<!-- This colour's hex code, which is used when the game is set in the 'light' theme.
+	In the case of colours intended for item or race recolouring, this will almost always be the same as the 'colour' value above (as is the case here). -->
+	<lightColour>F4C800</lightColour>
+	<!-- This colour's hex code to be used when displaying this colour's icon in covering transformation screens.
+	You can omit this field entirely, in which case the icon colour will be the same as the 'colour' value above (as is the case here). -->
+	<coveringIconColour>F4C800</coveringIconColour>
+	
+	<!-- here you can define names to be recognised by the parser for formatting.
+	e.g. After defining this colour's formattingNames as below, the parsing command '[style.colourFuchsia(This is coloured text!)]' will now work. -->
+	<formattingNames>
+		<name><![CDATA[bright greenish yellow]]></name>
+	</formattingNames>
+	
+	<!-- Tags which determine whether or not this colour is added to the game's covering colours (for fur, eyes, skin, etc.)
+	Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/ColourTag.java -->
+	<tags>
+		<tag>SKIN</tag> 
+		<tag>SLIME_NATURAL</tag>
+		<tag>SLIME_DYE</tag>
+		<tag>FEATHER_NATURAL</tag>
+		<tag>FEATHER_DYE</tag>
+		<tag>FUR</tag>
+		<tag>SCALE</tag>
+		<tag>HORN</tag>
+		<tag>ANTLER</tag>
+		<tag>HAIR</tag>
+		<tag>GENERIC_COVERING</tag>
+		<tag>MAKEUP</tag>
+		<tag>IRIS_NATURAL</tag>
+		<tag>IRIS_DYE</tag>
+		<tag>IRIS_PREDATOR_NATURAL</tag>
+		<tag>IRIS_PREDATOR_DYE</tag>
+		<tag>PUPIL_NATURAL</tag>
+		<tag>PUPIL_DYE</tag>
+		<tag>SCLERA_NATURAL</tag>
+		<tag>SCLERA_DYE</tag>	
+	</tags>
+	
+</colour>

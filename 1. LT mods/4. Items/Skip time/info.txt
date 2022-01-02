@@ -1,0 +1,4 @@
+Mod Name: Skip time
+Mod Category: Item
+Description: Rewinds Skip the week. Ñan use several items at once for a longer time skip.
+The game will freeze. The duration of the game freezing will depend on the number of simultaneous use of items and mods.

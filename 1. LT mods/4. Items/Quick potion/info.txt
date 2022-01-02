@@ -1,0 +1,4 @@
+Mod Name: Quick potion
+Mod Category: Item/Reusable
+Description: If you are too lazy to prepare potions, you can use this mod.
+Minimum price for a red drink (10) + Minimum price for a purple drink (10) = 20 flames.  Enchant red (10) + purple (10) = 20 essences * 2 (Fictional price for lust) = 40 essences.

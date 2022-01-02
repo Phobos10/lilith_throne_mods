@@ -1,0 +1,4 @@
+Mod name: Palico 
+Subspecies: Palico
+Special Attacks: No
+Description: This is a cat from the game Monster Hunter World. This is a subrace to the cat race. Addon.

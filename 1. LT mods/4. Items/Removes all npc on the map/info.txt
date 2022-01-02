@@ -1,0 +1,3 @@
+Mod Name: Removes all npc on the map
+Mod Category: Item
+Description: Removes all npc on the map. Now mod remove all npc in game. I left a comment in the code so you can tweak the mod if want to remove not only the robbers and not everywhere. 
