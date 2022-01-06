@@ -4,7 +4,3 @@ This is a [Google Drive](https://drive.google.com/drive/folders/1n7KAw_ACSoOeiUh
 Place Phobos folder in mods folder.
 ### How get/chek mod in game
 Game method or use the debug menu.  To use the debug menu, need to be on an empty tile and enter the word buggy on the keyboard.
-### Why GitHub
-For those who are looking for a mods on the Internet, not discord.
-
-I will be glad if someone will fix or improve something. 
