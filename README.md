@@ -8,5 +8,3 @@ Game method or use the debug menu.  To use the debug menu, need to be on an empt
 For those who are looking for a mods on the Internet, not discord.
 
 I will be glad if someone will fix or improve something. 
-### For google search
-Mods for the game Lilith Thorne by Phobos.
