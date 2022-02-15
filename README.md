@@ -1,4 +1,4 @@
-This is a [Google Drive](https://drive.google.com/drive/folders/1n7KAw_ACSoOeiUhKhrPPfzm_V6dIiIy7) mirror.
+This is a [Google Drive](https://drive.google.com/drive/folders/1n7KAw_ACSoOeiUhKhrPPfzm_V6dIiIy7) mirror. Github is not updated.
 ## FAQ
 ### How install mod
 Place Phobos folder in mods folder.
