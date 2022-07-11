@@ -1,0 +1,3 @@
+Mod Name: Change character height
+Mod Category: Item
+Description: Change character height from 15-366 cm. Use multiple items at the same time to speed up the changes.

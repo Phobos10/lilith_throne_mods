@@ -91,7 +91,7 @@
 			[##function nameCheck(character) {if(outputChar == null && character.getName().equals('Inventory 1')) {outputChar=character;}}]
 			[##game.getAllNPCs().forEach(nameCheck)]
 		#IF(outputChar !== null )
-			[##game.openInventoryDialogue(outputChar,INVENTORY_SEX)]
+				[##game.openInventoryDialogue(outputChar,INVENTORY_INTERACTION_FULL_MANAGEMENT)]
 		#ELSE
 			Give any character name Inventory 1 or export the previous inventory in the city hall. Take your inventory and give it to another slave. There may be more NPCs in one room than this.
 		#ENDIF

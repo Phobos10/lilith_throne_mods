@@ -15,13 +15,30 @@
 		<determiner><![CDATA[a]]></determiner>
 		
 		<!-- The name of this item. -->
-		<name><![CDATA[character preset switch 2]]></name>
+		<name><![CDATA[Character Preset Switch 2]]></name>
 		
 		<!-- The plural name of this item. If pluralByDefault's "false" is changed to "true", then the game will always the plural name when referring to this item. -->
-		<namePlural pluralByDefault="false"><![CDATA[character preset switch 2]]></namePlural>
+		<namePlural pluralByDefault="false"><![CDATA[Character Preset Switch 2]]></namePlural>
 		
 		<!-- The description/lore of this item. -->
-		<description><![CDATA[Uses the preset of a character named Preset 2.]]></description> 
+		<description><![CDATA[
+		[##var outputChar = null]
+		[##var tempChar = game.getNPCById(game.addNPC('FieldsBandit', null))]
+		[##function nameCheck(character) 
+		{
+		if(outputChar == null && character.getAffectionMap().containsKey("СPS2")) 
+		{
+		outputChar=character;
+		}
+		}]
+		[##game.getAllNPCs().forEach(nameCheck)]
+		
+			#IF(outputChar == null)
+				Use the item on yourself to get instructions.
+			#ELSE
+				Use the item to apply the changes.
+			#ENDIF
+		]]></description>
 		
 		<!-- How the item is used. This should be a single verb, and is used as the title of the action when using it. -->
 		<useDescriptor>use</useDescriptor>
@@ -77,7 +94,51 @@
 		No characters are passed in as parsing arguments, so you should NOT use any character-specific parsing elements (such as [npc.name]). -->
 		<effectTooltipLines>
 			<line><![CDATA[
-				Uses the preset of a character named Preset 2
+			[##var output = '']
+			[##var output1 = '']
+			[##var output2 = '']
+			[##function nameCheck(char) 
+			{
+			var KnowName = (char.isPlayerKnowsName()==false) ? 'The ' : '';
+			var Space = ' ';
+			if(char.getAffectionMap().containsKey("СPS2"))
+				{
+					output += ''+ KnowName + char.getName() +'<br>';
+					output1 += ''+ char.getHomeCell().getPlace().getName() +'<br>';
+				
+					if(pc.getAffectionMap().containsKey("CP_mode_all"))
+					{
+						output2 += 'All';	
+					}
+					else if(pc.getAffectionMap().containsKey("CP_mode_clothing"))
+					{
+						output2 += 'Clothing';	
+					}
+					else if(pc.getAffectionMap().containsKey("CP_mode_body"))
+					{
+						output2 += 'Body';	
+					}
+				}
+			}]
+			[##game.getAllNPCs().forEach(nameCheck)]	
+			Traget: 
+			#IF(output != '')	
+				[#output]
+				HL: 
+				[#output1]				
+			#ELSE
+				Empty
+			#ENDIF
+				#IF(output != '')	
+				Mod: 
+					#IF(!pc.getAffectionMap().containsKey("CP_mode_all") && !pc.getAffectionMap().containsKey("CP_mode_clothing") && 
+					!pc.getAffectionMap().containsKey("CP_mode_body"))
+					None					
+					#ELSE
+					[#output2]	
+					#ENDIF
+				#ELSE
+				#ENDIF
 			]]></line>
 		</effectTooltipLines>
 		
@@ -87,107 +148,70 @@
 		All of the returned text is displayed to the player. [#npc.incrementVaginaCapacity(1)] [#npc.incrementAssCapacity(1)] [#npc.incrementFaceCapacity(1)] -->
 		<applyEffects><![CDATA[	
 		<p style='text-align:center; margin-top:0; padding-top:0;'>
-		[##var outputChar = null]
-		[##var tempChar = game.getNPCById(game.addNPC('FieldsBandit', null))]
-		[##function nameCheck(character) {if(outputChar == null && character.getName().equals('Preset 2')) {outputChar=character;}}]
-		[##game.getAllNPCs().forEach(nameCheck)]
-		
-		#IF(outputChar !== null )
-			[##tempChar.getClothingCurrentlyEquipped().clear()]
-			[##tempChar.setBody(npc.getBody(),false)]
-			[##tempChar.getClothingCurrentlyEquipped().addAll(npc.getClothingCurrentlyEquipped())]
-			
-			[##npc.getClothingCurrentlyEquipped().clear()]
-			[##npc.setBody(outputChar.getBody(),false)]
-			[##npc.getClothingCurrentlyEquipped().addAll(outputChar.getClothingCurrentlyEquipped())]
-			
-			[##outputChar.getClothingCurrentlyEquipped().clear()]
-			[##outputChar.setBody(tempChar.getBody(),false)]
-			[##outputChar.getClothingCurrentlyEquipped().addAll(tempChar.getClothingCurrentlyEquipped())]
-			
-			[##game.removeNPC(tempChar)]
-			
-			[npc.Name] applied Preset 2.
-		#ELSE
-			Give any character name Preset 2.
+		#IF(outputChar !== null)
+
+				[npc.Name] applied Preset 2.<br>
+
+				#IF(pc.getAffectionMap().containsKey("CP_mode_all"))
+					[##tempChar.getClothingCurrentlyEquipped().clear()]
+					[##tempChar.setBody(npc.getBody(),false)]
+					[##tempChar.getClothingCurrentlyEquipped().addAll(npc.getClothingCurrentlyEquipped())]
+					
+					[##npc.getClothingCurrentlyEquipped().clear()]
+					[##npc.setBody(outputChar.getBody(),false)]
+					[##npc.getClothingCurrentlyEquipped().addAll(outputChar.getClothingCurrentlyEquipped())]
+					
+					[##outputChar.getClothingCurrentlyEquipped().clear()]
+					[##outputChar.setBody(tempChar.getBody(),false)]
+					[##outputChar.getClothingCurrentlyEquipped().addAll(tempChar.getClothingCurrentlyEquipped())]
+					
+					[##game.banishNPC(tempChar)]
+					
+				#ELSEIF(pc.getAffectionMap().containsKey("CP_mode_clothing"))	
+					[##tempChar.getClothingCurrentlyEquipped().clear()]
+					[##tempChar.getClothingCurrentlyEquipped().addAll(npc.getClothingCurrentlyEquipped())]
+					
+					[##npc.getClothingCurrentlyEquipped().clear()]
+					[##npc.getClothingCurrentlyEquipped().addAll(outputChar.getClothingCurrentlyEquipped())]
+					
+					[##outputChar.getClothingCurrentlyEquipped().clear()]
+					[##outputChar.getClothingCurrentlyEquipped().addAll(tempChar.getClothingCurrentlyEquipped())]
+					
+					[##game.banishNPC(tempChar)]
+					
+				#ELSEIF(pc.getAffectionMap().containsKey("CP_mode_body"))	
+					[##tempChar.setBody(npc.getBody(),false)]
+				
+					[##npc.setBody(outputChar.getBody(),false)]
+					
+					[##outputChar.setBody(tempChar.getBody(),false)]
+					
+					[##game.banishNPC(tempChar)]
+				#ELSEIF(npc.isPlayer()==true && !pc.getAffectionMap().containsKey("CP_mode_all") && !pc.getAffectionMap().containsKey("CP_mode_clothing") && 
+				!pc.getAffectionMap().containsKey("CP_mode_body"))		
+					[style.boldbad(Mode not set.)]		
+				#ENDIF							
 		#ENDIF
-        </p>
+       	
+		#IF(npc.isPlayer()==false && !npc.getAffectionMap().containsKey("СPS1") && !npc.getAffectionMap().containsKey("СPS3"))
+			#IF(!npc.getAffectionMap().containsKey("СPS2"))
+				[##npc.getAffectionMap().put("СPS2",1)]
+				[npc.Name] is now [style.boldgood(available)] for [style.bold(Preset 2)].
+			#ELSEIF(npc.getAffectionMap().containsKey("СPS2"))
+				[##npc.getAffectionMap().remove("СPS2")]
+				[npc.Name] is now [style.boldbad(not available)] for [style.bold(Preset 2)].
+			#ENDIF
+		#ENDIF
+		</p>
+		
+		#IF(outputChar == null && npc.isPlayer()==true)
+			1. Find a target to assign Preset.<br>
+			2. Use this item on the selected npc.<br>
+			3. Use the item "Mode Switch" to select the mode: All/Clothing/Body.<br>
+			4. Use the item anywhere on yourself to get the body from step 1.<br>
+			5. Use the item again to return the previous body.<br>
+		#ENDIF	
 		]]></applyEffects>
-		
-		<!--
-		
-		<Original>
-		
-		[##var outputChar = null]
-		[##var tempChar = game.getNPCById(game.addNPC('FieldsBandit', null))]
-		[##function nameCheck(character) {if(outputChar == null && character.getName().equals('Preset 2')) {outputChar=character;}}]
-		[##game.getAllNPCs().forEach(nameCheck)]
-		
-		#IF(outputChar !== null )
-			[##tempChar.getClothingCurrentlyEquipped().clear()]
-			[##tempChar.setBody(npc.getBody(),false)]
-			[##tempChar.getClothingCurrentlyEquipped().addAll(npc.getClothingCurrentlyEquipped())]
-			
-			[##npc.getClothingCurrentlyEquipped().clear()]
-			[##npc.setBody(outputChar.getBody(),false)]
-			[##npc.getClothingCurrentlyEquipped().addAll(outputChar.getClothingCurrentlyEquipped())]
-			
-			[##outputChar.getClothingCurrentlyEquipped().clear()]
-			[##outputChar.setBody(tempChar.getBody(),false)]
-			[##outputChar.getClothingCurrentlyEquipped().addAll(tempChar.getClothingCurrentlyEquipped())]
-			
-			[##game.removeNPC(tempChar)]
-			
-			[npc.Name] applied Preset 2.
-		#ELSE
-			Give any character name Preset 2.
-		#ENDIF
-		
-		<Only body>
-		
-		[##var outputChar = null]
-		[##var tempChar = game.getNPCById(game.addNPC('FieldsBandit', null))]
-		[##function nameCheck(character) {if(outputChar == null && character.getName().equals('Preset 2')) {outputChar=character;}}]
-		[##game.getAllNPCs().forEach(nameCheck)]
-		
-		#IF(outputChar !== null )
-			[##tempChar.setBody(npc.getBody(),false)]
-			
-			[##npc.setBody(outputChar.getBody(),false)]
-			
-			[##outputChar.setBody(tempChar.getBody(),false)]
-			
-			[##game.removeNPC(tempChar)]
-			
-			[npc.Name] applied Preset 2.
-		#ELSE
-			Give any character name Preset 2.
-		#ENDIF
-		
-		<Only clothing>
-		
-		[##var outputChar = null]
-		[##var tempChar = game.getNPCById(game.addNPC('FieldsBandit', null))]
-		[##function nameCheck(character) {if(outputChar == null && character.getName().equals('Preset 2')) {outputChar=character;}}]
-		[##game.getAllNPCs().forEach(nameCheck)]
-		
-		#IF(outputChar !== null )
-			[##tempChar.getClothingCurrentlyEquipped().clear()]
-			[##tempChar.getClothingCurrentlyEquipped().addAll(npc.getClothingCurrentlyEquipped())]
-			
-			[##npc.getClothingCurrentlyEquipped().clear()]
-			[##npc.getClothingCurrentlyEquipped().addAll(outputChar.getClothingCurrentlyEquipped())]
-			
-			[##outputChar.getClothingCurrentlyEquipped().clear()]
-			[##outputChar.getClothingCurrentlyEquipped().addAll(tempChar.getClothingCurrentlyEquipped())]
-			
-			[##game.removeNPC(tempChar)]
-			
-			[npc.Name] applied Preset 2.
-		#ELSE
-			Give any character name Preset 2.
-		#ENDIF
-		-->	
 			
 		<!-- Special item tags that apply to this item. Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/master/src/com/lilithsthrone/game/inventory/ItemTag.java -->
 		<itemTags>

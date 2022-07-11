@@ -100,7 +100,11 @@
 			}
 			}
 		game.getAllNPCs().forEach(doThing)]
-		[#output]
+		#IF(output != '')
+			[#output]
+		#ELSE
+			No more unknown children.
+		#ENDIF
 		</p>
 		]]></applyEffects>
 
