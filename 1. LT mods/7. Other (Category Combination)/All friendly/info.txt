@@ -1,0 +1,1 @@
+Makes the Affection and Obedience stat permanent for everyone. Uses an item to enable a mod.

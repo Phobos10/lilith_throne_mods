@@ -1,0 +1,5 @@
+Mod Name: Selective setting of affection
+
+Mod Category: Item/Status Effect
+
+Description: For those who follow the relationship of npc to each other. Now you can tune their affection to each other.

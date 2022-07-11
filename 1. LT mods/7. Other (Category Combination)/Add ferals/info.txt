@@ -1,0 +1,3 @@
+Mod Name: Add ferals (Other)
+Mod Category: Status Effects
+Description: N% chance spawn feral npc. All races. Use an item to activate a feral spawn.

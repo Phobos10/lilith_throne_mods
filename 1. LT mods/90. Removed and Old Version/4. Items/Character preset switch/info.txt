@@ -1,0 +1,5 @@
+Mod Name: Character preset switch
+Mod Category: Item
+Description: If you wanted to have a combat or sex form (or turn into whoever you want), then this mod is for you.
+Allows you to change your appearance from a distance. Now available body, clothing (clothing, piercing). Weapons and tattoos were not delivered.
+Rename the slave to Preset 1, 2 or 3 and use the item on self. There are comments in the file where you can select clothes or body separately and can change the name of the slaves (for example: battle, sex, werewolf) in the file.
