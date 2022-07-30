@@ -1,0 +1,1 @@
+Places a debuff on enemies on the tile. The spider web will be on the tile and won't disappear if you don't want to. Need the abdomen of a spider (body part the tail).
