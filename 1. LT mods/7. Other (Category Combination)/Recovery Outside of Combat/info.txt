@@ -1,0 +1,2 @@
+Restores hp, mana and removes lust outside of combat.
+No more need to use potions or anything else.
