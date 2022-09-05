@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dialogueNodes>
+
+	<scene id="on">
+		<preParsingEffects><![CDATA[
+		]]></preParsingEffects>
+		<content folderPath="mods/Phobos/txt/encounters/edit_map/menu">DISPLAY</content>
+		<secondsPassed minutes="true"><![CDATA[0]]></secondsPassed>
+		<continuesDialogue>false</continuesDialogue>
+		<travelDisabled>true</travelDisabled>
+		<responseTabs>
+			<tab index="0"><![CDATA[
+				General
+			]]></tab>
+			<tab index="1"><![CDATA[
+				Other
+			]]></tab>
+		</responseTabs>
+		<!-- [#pc.walkPathNoEffects(pc.getCell().getPlace().getPlaceType(),true, 0.00)] -->
+		<responses>
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[↑]]></responseTitle>
+				<responseTooltip><![CDATA[
+					#IF(pc.getLocation().getY()!==game.getWorlds().get(pc.getWorldLocation()).WORLD_HEIGHT-1)
+						Moving in a given direction ignoring an obstacle.
+					#ELSE
+						[style.colorbad(This is the border of the map.)]
+					#ENDIF
+				]]></responseTooltip>
+				<nextDialogue><![CDATA[
+					#IF(pc.getLocation().getY()!==game.getWorlds().get(pc.getWorldLocation()).WORLD_HEIGHT-1)
+						Phobos_encounters_edit_map_menu_on
+					#ELSE
+						null
+					#ENDIF
+				]]></nextDialogue>
+				<effects><![CDATA[
+					#IF(pc.getLocation().getY()!==game.getWorlds().get(pc.getWorldLocation()).WORLD_HEIGHT-1)
+						[##pc.getLocation().setY(pc.getLocation().getY()+1)]
+						[##pc.getCell().setDiscovered(true)]
+					#ENDIF
+				]]></effects>		
+			</response>
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[2]]></index>
+				<responseTitle><![CDATA[↓]]></responseTitle>
+				<responseTooltip><![CDATA[
+					#IF(pc.getLocation().getY()!==0)
+						Moving in a given direction ignoring an obstacle.
+					#ELSE
+						[style.colorbad(This is the border of the map.)]
+					#ENDIF
+				]]></responseTooltip>
+				<nextDialogue><![CDATA[
+					#IF(pc.getLocation().getY()!==0)
+						Phobos_encounters_edit_map_menu_on
+					#ELSE
+						null
+					#ENDIF
+				]]></nextDialogue>
+				<effects><![CDATA[
+					#IF(pc.getLocation().getY()!==0)
+						[##pc.getLocation().setY(pc.getLocation().getY()-1)]
+						[##pc.getCell().setDiscovered(true)]
+					#ENDIF
+				]]></effects>
+			</response>
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[3]]></index>
+				<responseTitle><![CDATA[←]]></responseTitle>
+				<responseTooltip><![CDATA[
+					#IF(pc.getLocation().getX()!==0)
+						Moving in a given direction ignoring an obstacle.
+					#ELSE
+						[style.colorbad(This is the border of the map.)]
+					#ENDIF
+				]]></responseTooltip>
+				<nextDialogue><![CDATA[
+					#IF(pc.getLocation().getX()!==0)
+						Phobos_encounters_edit_map_menu_on
+					#ELSE
+						null
+					#ENDIF
+				]]></nextDialogue>
+				<effects><![CDATA[
+					#IF(pc.getLocation().getX()!==0)
+						[##pc.getLocation().setX(pc.getLocation().getX()-1)]
+						[##pc.getCell().setDiscovered(true)]
+					#ENDIF
+				]]></effects>
+			</response>
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[4]]></index>
+				<responseTitle><![CDATA[→]]></responseTitle>
+				<responseTooltip><![CDATA[
+					#IF(pc.getLocation().getX()!==game.getWorlds().get(pc.getWorldLocation()).WORLD_WIDTH-1)
+						Moving in a given direction ignoring an obstacle.
+					#ELSE
+						[style.colorbad(This is the border of the map.)]
+					#ENDIF
+				]]></responseTooltip>
+				<nextDialogue><![CDATA[
+					#IF(pc.getLocation().getX()!==game.getWorlds().get(pc.getWorldLocation()).WORLD_WIDTH-1)
+						Phobos_encounters_edit_map_menu_on
+					#ELSE
+						null
+					#ENDIF
+				]]></nextDialogue>
+				<effects><![CDATA[
+					#IF(pc.getLocation().getX()!==game.getWorlds().get(pc.getWorldLocation()).WORLD_WIDTH-1)
+						[##pc.getLocation().setX(pc.getLocation().getX()+1)]
+						[##pc.getCell().setDiscovered(true)]
+					#ENDIF
+				]]></effects>
+			</response>	
+			<!-- Copy Place 1 -->
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[6]]></index>
+				<responseTitle><![CDATA[
+					#IF(farah.getHomeWorldLocation().getId()!=='EMPTY')
+						#IF(pc.getAffectionMap().containsKey("em_selected_1") 
+						&& !pc.getAffectionMap().containsKey("em_selected_2")
+						&& !pc.getAffectionMap().containsKey("em_selected_3"))
+							[style.colorgood([#farah.getHomeCell().getPlace().getPlaceType().getName()])]
+						#ELSE	
+							[#farah.getHomeCell().getPlace().getPlaceType().getName()]
+						#ENDIF
+					#ELSEIF(farah.getHomeWorldLocation().getId()=='EMPTY'
+					&& pc.getAffectionMap().containsKey("em_selected_1") 
+					&& !pc.getAffectionMap().containsKey("em_selected_2")
+					&& !pc.getAffectionMap().containsKey("em_selected_3"))
+						[style.colorgood(Copy Place 1)]
+					#ELSE
+					Copy Place 1
+				#ENDIF
+				]]></responseTitle>
+				<responseTooltip><![CDATA[
+					Copied: 
+					#IF(farah.getHomeWorldLocation().getId()!=='EMPTY')
+						[#farah.getHomeCell().getPlace().getPlaceType().getName()]
+					#ELSE
+						Nothing.
+					#ENDIF
+				]]></responseTooltip>
+				<nextDialogue/>
+				<effects><![CDATA[
+				#IF(farah.getHomeWorldLocation().getId()=='EMPTY')
+					[##farah.setHomeLocation(pc.getWorldLocation(), pc.getLocationPlaceType())]
+				#ENDIF
+					[##pc.setHomeLocation()]
+					[##farah.setHomeLocation(pc.getWorldLocation(), pc.getLocationPlaceType())]		
+					[##pc.setLocation(WORLD_TYPE_Phobos_edit_map, PLACE_TYPE_Phobos_edit_map_exit, false)]
+					[##pc.getLocation().setX(2)]			
+					[##pc.getLocation().setY(5)]
+					[##game.getPlayerCell().getPlace().setPlaceType(farah.getHomeCell().getPlace().getPlaceType())]
+					[##farah.setHomeLocation(pc.getWorldLocation(), pc.getLocationPlaceType())]
+					[##pc.setLocation(pc.getHomeCell())]
+				]]></effects>
+			</response>
+			<!-- Copy Place 2 -->
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[7]]></index>
+				<responseTitle><![CDATA[
+				#IF(lumi.getHomeWorldLocation().getId()!=='EMPTY')
+					#IF(!pc.getAffectionMap().containsKey("em_selected_1") 
+					&& pc.getAffectionMap().containsKey("em_selected_2")
+					&& !pc.getAffectionMap().containsKey("em_selected_3"))
+						[style.colorgood([#lumi.getHomeCell().getPlace().getPlaceType().getName()])]
+					#ELSE	
+						[#lumi.getHomeCell().getPlace().getPlaceType().getName()]
+					#ENDIF
+				#ELSEIF(lumi.getHomeWorldLocation().getId()=='EMPTY'
+				&& !pc.getAffectionMap().containsKey("em_selected_1") 
+				&& pc.getAffectionMap().containsKey("em_selected_2")
+				&& !pc.getAffectionMap().containsKey("em_selected_3"))
+					[style.colorgood(Copy Place 2)]
+				#ELSE
+					Copy Place 2
+				#ENDIF
+				]]></responseTitle>
+				<responseTooltip><![CDATA[
+					Copied: 
+					#IF(lumi.getHomeWorldLocation().getId()!=='EMPTY')
+						[#lumi.getHomeCell().getPlace().getPlaceType().getName()]
+					#ELSE
+						Nothing.
+					#ENDIF
+				]]></responseTooltip>
+				<nextDialogue/>
+				<effects><![CDATA[
+				#IF(lumi.getHomeWorldLocation().getId()=='EMPTY')
+					[##lumi.setHomeLocation(pc.getWorldLocation(), pc.getLocationPlaceType())]
+				#ENDIF
+					[##pc.setHomeLocation()]
+					[##lumi.setHomeLocation(pc.getWorldLocation(), pc.getLocationPlaceType())]		
+					[##pc.setLocation(WORLD_TYPE_Phobos_edit_map, PLACE_TYPE_Phobos_edit_map_exit, false)]
+					[##pc.getLocation().setX(1)]			
+					[##pc.getLocation().setY(5)]
+					[##game.getPlayerCell().getPlace().setPlaceType(lumi.getHomeCell().getPlace().getPlaceType())]
+					[##lumi.setHomeLocation(pc.getWorldLocation(), pc.getLocationPlaceType())]
+					[##pc.setLocation(pc.getHomeCell())]
+				]]></effects>
+			</response>
+			<!-- Copy Place 3 -->
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[8]]></index>
+				<responseTitle><![CDATA[
+					#IF(pazu.getHomeWorldLocation().getId()!=='EMPTY')
+						#IF(!pc.getAffectionMap().containsKey("em_selected_1") 
+						&& !pc.getAffectionMap().containsKey("em_selected_2")
+						&& pc.getAffectionMap().containsKey("em_selected_3"))
+							[style.colorgood([#pazu.getHomeCell().getPlace().getPlaceType().getName()])]
+						#ELSE	
+							[#pazu.getHomeCell().getPlace().getPlaceType().getName()]
+						#ENDIF
+					#ELSEIF(pazu.getHomeWorldLocation().getId()=='EMPTY'
+					&& !pc.getAffectionMap().containsKey("em_selected_1") 
+					&& !pc.getAffectionMap().containsKey("em_selected_2")
+					&& pc.getAffectionMap().containsKey("em_selected_3"))
+						[style.colorgood(Copy Place 3)]
+					#ELSE
+						Copy Place 3
+					#ENDIF
+				]]></responseTitle>
+				<responseTooltip><![CDATA[
+					Copied: 
+					#IF(pazu.getHomeWorldLocation().getId()!=='EMPTY')
+						[#pazu.getHomeCell().getPlace().getPlaceType().getName()]
+					#ELSE
+						Nothing.
+					#ENDIF
+				]]></responseTooltip>
+				<nextDialogue/>
+				<effects><![CDATA[
+				#IF(pazu.getHomeWorldLocation().getId()=='EMPTY')
+					[##pazu.setHomeLocation(pc.getWorldLocation(), pc.getLocationPlaceType())]
+				#ENDIF
+					[##pc.setHomeLocation()]
+					[##pazu.setHomeLocation(pc.getWorldLocation(), pc.getLocationPlaceType())]		
+					[##pc.setLocation(WORLD_TYPE_Phobos_edit_map, PLACE_TYPE_Phobos_edit_map_exit, false)]
+					[##pc.getLocation().setX(3)]			
+					[##pc.getLocation().setY(5)]
+					[##game.getPlayerCell().getPlace().setPlaceType(pazu.getHomeCell().getPlace().getPlaceType())]
+					[##pazu.setHomeLocation(pc.getWorldLocation(), pc.getLocationPlaceType())]
+					[##pc.setLocation(pc.getHomeCell())]
+				]]></effects>
+			</response>
+			<!-- Insert Place -->
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[11]]></index>
+				<responseTitle><![CDATA[Insert Place]]></responseTitle>
+				<responseTooltip><![CDATA[
+				Replace: 
+					#IF(pc.getAffectionMap().containsKey("em_selected_1")
+					&& farah.getHomeWorldLocation().getId()!=='EMPTY')
+						[#pc.getCell().getPlace().getPlaceType().getName()] on [#farah.getHomeCell().getPlace().getPlaceType().getName()].
+					#ELSEIF(pc.getAffectionMap().containsKey("em_selected_2")
+					&& lumi.getHomeWorldLocation().getId()!=='EMPTY')
+						[#pc.getCell().getPlace().getPlaceType().getName()] on [#lumi.getHomeCell().getPlace().getPlaceType().getName()].
+					#ELSEIF(pc.getAffectionMap().containsKey("em_selected_3")
+					&& pazu.getHomeWorldLocation().getId()!=='EMPTY')
+						[#pc.getCell().getPlace().getPlaceType().getName()] on [#pazu.getHomeCell().getPlace().getPlaceType().getName()].
+					#ELSE
+						Not Selected.
+					#ENDIF
+				]]></responseTooltip>
+				<nextDialogue><![CDATA[
+				#IF(pc.getAffectionMap().containsKey("em_hold_off"))
+					#IF(farah.getHomeWorldLocation().getId()=='EMPTY' 
+					&& pc.getAffectionMap().containsKey("em_selected_1")) 
+						null
+					#ELSEIF(farah.getHomeWorldLocation().getId()!=='EMPTY' 
+					&& pc.getAffectionMap().containsKey("em_selected_1"))
+						Phobos_encounters_edit_map_menu_on
+					#ELSEIF(lumi.getHomeWorldLocation().getId()=='EMPTY' 
+					&& pc.getAffectionMap().containsKey("em_selected_2")) 
+						null
+					#ELSEIF(lumi.getHomeWorldLocation().getId()!=='EMPTY' 
+					&& pc.getAffectionMap().containsKey("em_selected_2"))
+						Phobos_encounters_edit_map_menu_on
+					#ELSEIF(pazu.getHomeWorldLocation().getId()=='EMPTY' 
+					&& pc.getAffectionMap().containsKey("em_selected_3")) 
+						null
+					#ELSEIF(pazu.getHomeWorldLocation().getId()!=='EMPTY' 
+					&& pc.getAffectionMap().containsKey("em_selected_3"))
+						Phobos_encounters_edit_map_menu_on
+					#ENDIF
+				#ELSE
+					null
+				#ENDIF
+				]]></nextDialogue>
+				<effects><![CDATA[
+					#IF(pc.getAffectionMap().containsKey("em_selected_1") 
+					&& !pc.getAffectionMap().containsKey("em_selected_2")
+					&& !pc.getAffectionMap().containsKey("em_selected_3"))
+						[##game.getPlayerCell().getPlace().setPlaceType(farah.getHomeCell().getPlace().getPlaceType())]
+					#ELSEIF(!pc.getAffectionMap().containsKey("em_selected_1") 
+					&& pc.getAffectionMap().containsKey("em_selected_2")
+					&& !pc.getAffectionMap().containsKey("em_selected_3"))
+						[##game.getPlayerCell().getPlace().setPlaceType(lumi.getHomeCell().getPlace().getPlaceType())]
+					#ELSEIF(!pc.getAffectionMap().containsKey("em_selected_1") 
+					&& !pc.getAffectionMap().containsKey("em_selected_2")
+					&& pc.getAffectionMap().containsKey("em_selected_3"))
+						[##game.getPlayerCell().getPlace().setPlaceType(pazu.getHomeCell().getPlace().getPlaceType())]
+					#ENDIF
+				]]></effects>
+			</response>
+			<!-- Mode Hold -->
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[12]]></index>
+				<responseTitle><![CDATA[
+					Mode Hold:  
+					#IF(!pc.getAffectionMap().containsKey("em_hold_on") && pc.getAffectionMap().containsKey("em_hold_off"))
+						[style.colorbad(Off)]
+					#ELSEIF(!pc.getAffectionMap().containsKey("em_hold_off") && pc.getAffectionMap().containsKey("em_hold_on"))
+						[style.colorgood(On)]
+					#ELSEIF(!pc.getAffectionMap().containsKey("em_hold_off") && !pc.getAffectionMap().containsKey("em_hold_on"))
+						[style.colorbad(Off)]
+					#ENDIF
+				]]></responseTitle>
+				<responseTooltip><![CDATA[
+					Changes the mode of pressing once [style.bold(Insert Place)] to constant pressing.
+				]]></responseTooltip>
+				<nextDialogue><![CDATA[
+					#IF(farah.getHomeWorldLocation().getId()=='EMPTY' 
+					&& pc.getAffectionMap().containsKey("em_selected_1")) 
+						null
+					#ELSEIF(farah.getHomeWorldLocation().getId()!=='EMPTY' 
+					&& pc.getAffectionMap().containsKey("em_selected_1"))
+						Phobos_encounters_edit_map_menu_on
+					#ELSEIF(lumi.getHomeWorldLocation().getId()=='EMPTY' 
+					&& pc.getAffectionMap().containsKey("em_selected_2")) 
+						null
+					#ELSEIF(lumi.getHomeWorldLocation().getId()!=='EMPTY' 
+					&& pc.getAffectionMap().containsKey("em_selected_2"))
+						Phobos_encounters_edit_map_menu_on
+					#ELSEIF(pazu.getHomeWorldLocation().getId()=='EMPTY' 
+					&& pc.getAffectionMap().containsKey("em_selected_3")) 
+						null
+					#ELSEIF(pazu.getHomeWorldLocation().getId()!=='EMPTY' 
+					&& pc.getAffectionMap().containsKey("em_selected_3"))
+						Phobos_encounters_edit_map_menu_on
+					#ENDIF
+				]]></nextDialogue>
+				<effects><![CDATA[
+					#IF(!pc.getAffectionMap().containsKey("em_hold_on") && pc.getAffectionMap().containsKey("em_hold_off"))
+						[##pc.addStatusEffect(SE_Phobos_edit_map_mode_hold, 320000000)]
+						[##pc.getAffectionMap().put("em_hold_on",1)]
+						[##pc.getAffectionMap().remove("em_hold_off")]
+					#ELSEIF(!pc.getAffectionMap().containsKey("em_hold_off") && pc.getAffectionMap().containsKey("em_hold_on"))
+						[##pc.removeStatusEffect(SE_Phobos_edit_map_mode_hold)]
+						[##pc.getAffectionMap().put("em_hold_off",1)]
+						[##pc.getAffectionMap().remove("em_hold_on")]
+					#ELSEIF(!pc.getAffectionMap().containsKey("em_hold_off") && !pc.getAffectionMap().containsKey("em_hold_on"))
+						[##pc.getAffectionMap().put("em_hold_off",1)]
+					#ENDIF
+				]]></effects>
+			</response>
+			<!-- Switch Place -->
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[13]]></index>
+				<responseTitle><![CDATA[Switch Place]]></responseTitle>
+				<responseTooltip><![CDATA[
+					#IF(!pc.getAffectionMap().containsKey("em_selected_1") 
+						&& !pc.getAffectionMap().containsKey("em_selected_2")
+						&& !pc.getAffectionMap().containsKey("em_selected_3"))
+						[style.colorbad(Make a copy of the place.)]	
+					#ELSE
+						Switching copied places.
+					#ENDIF
+				]]></responseTooltip>
+				<nextDialogue/>	
+				<effects><![CDATA[
+					#IF(!pc.getAffectionMap().containsKey("em_selected_1") 
+					&& !pc.getAffectionMap().containsKey("em_selected_2")
+					&& pc.getAffectionMap().containsKey("em_selected_3"))
+						[##pc.getAffectionMap().remove("em_selected_3")]
+						[##pc.getAffectionMap().put("em_selected_1",1)]
+					#ELSEIF(pc.getAffectionMap().containsKey("em_selected_1") 
+					&& !pc.getAffectionMap().containsKey("em_selected_2")
+					&& !pc.getAffectionMap().containsKey("em_selected_3"))
+						[##pc.getAffectionMap().remove("em_selected_1")]
+						[##pc.getAffectionMap().put("em_selected_2",1)]
+					#ELSEIF(!pc.getAffectionMap().containsKey("em_selected_1") 
+					&& pc.getAffectionMap().containsKey("em_selected_2")
+					&& !pc.getAffectionMap().containsKey("em_selected_3"))
+						[##pc.getAffectionMap().remove("em_selected_2")]
+						[##pc.getAffectionMap().put("em_selected_3",1)]
+					#ELSEIF(!pc.getAffectionMap().containsKey("em_selected_1") 
+					&& !pc.getAffectionMap().containsKey("em_selected_2")
+					&& !pc.getAffectionMap().containsKey("em_selected_3"))
+						[##pc.getAffectionMap().put("em_selected_1",1)]
+					#ENDIF
+				]]></effects>
+			</response>
+			<!-- Close -->
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[0]]></index>
+				<responseTitle><![CDATA[
+					#IF(pc.getWorldLocation().getId()!=='Phobos_edit_map')
+						Close
+					#ELSE
+						[style.colorgood(Home)]
+					#ENDIF
+				]]></responseTitle>
+				<responseTooltip><![CDATA[
+					Closes the menu.
+				]]></responseTooltip>
+				<nextDialogue><![CDATA[
+					default
+				]]></nextDialogue>
+				<effects><![CDATA[
+					#IF(pc.hasStatusEffect(SE_Phobos_edit_map_mode_hold))
+						[##pc.getAffectionMap().put("em_hold_off",1)]
+						[##pc.getAffectionMap().remove("em_hold_on")]
+						[##pc.removeStatusEffect(SE_Phobos_edit_map_mode_hold)]
+					#ENDIF
+						#IF(pc.getWorldLocation().getId()=='Phobos_edit_map')
+							[##pc.setLocation(pc.getHomeCell())]
+						#ENDIF
+				]]></effects>			
+			</response>
+			<!-- Instruction -->
+			<response>
+				<availabilityConditional><![CDATA[false]]></availabilityConditional>
+				<responseTabIndex><![CDATA[1]]></responseTabIndex>
+				<index><![CDATA[5]]></index>
+				<responseTitle><![CDATA[Instruction]]></responseTitle>
+				<responseTooltip><![CDATA[
+					#IF(false)
+						Opens instruction.
+					#ELSE
+						Seriously?
+					#ENDIF
+				]]></responseTooltip>
+				<nextDialogue><![CDATA[
+					#IF(false)
+						Phobos_encounters_edit_map_instruction_on
+					#ELSE
+						null
+					#ENDIF
+				]]></nextDialogue>
+			</response>
+			<!-- Sandbox -->
+			<response>
+				<responseTabIndex><![CDATA[1]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[Sandbox]]></responseTitle>
+				<responseTooltip><![CDATA[Big empty map, here can do what you want.]]></responseTooltip>
+				<nextDialogue><![CDATA[
+					#IF(pc.getWorldLocation().getId()=='Phobos_sandbox')
+						null
+					#ELSE
+						Phobos_encounters_edit_map_menu_on
+					#ENDIF
+				]]></nextDialogue>
+				<effects><![CDATA[
+					[##var outputChar = null]
+					[##var tempChar = game.getNPCById(game.addNPC('FieldsBandit', null))]
+					[##function nameCheck(character) 
+						{
+						if(outputChar == null) 
+						{
+						outputChar=character;
+						}
+						}]
+					[##game.getAllNPCs().forEach(nameCheck)]
+	
+					#IF(outputChar.getHomeWorldLocation().getId()=='Phobos_sandbox')
+						[##pc.setLocation(outputChar.getHomeCell())]
+					#ELSE
+						[##pc.setLocation(WORLD_TYPE_Phobos_sandbox, PLACE_TYPE_Phobos_sandbox_exit, false)]
+					#ENDIF		
+					#IF(pc.hasStatusEffect(SE_Phobos_edit_map_mode_hold))
+						[##pc.getAffectionMap().put("em_hold_off",1)]
+						[##pc.getAffectionMap().remove("em_hold_on")]
+						[##pc.removeStatusEffect(SE_Phobos_edit_map_mode_hold)]
+					#ENDIF					
+				]]></effects>
+			</response>
+		</responses>
+	</scene>
+	
+</dialogueNodes>

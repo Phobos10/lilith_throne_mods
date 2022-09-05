@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<worldType>
+	<worldRegion>MISC</worldRegion>
+	<name><![CDATA[Sandbox]]></name>
+	<colour>BASE_WHITE</colour>
+	<sexBlockedReason/>
+	<furniturePresent>false</furniturePresent>
+	<wallsPresent>false</wallsPresent>
+	<loiteringEnabled>true</loiteringEnabled>
+	<flightEnabled>false</flightEnabled>
+	<visibleFromStart>true</visibleFromStart>
+	<fullyRevealedFromStart>true</fullyRevealedFromStart>
+	<globalMapLocation>WORLD_MAP_FIELDS_CITY</globalMapLocation>
+	<standardPlace>Phobos_sandbox_corridor</standardPlace>
+	<entryFromGlobalMapLocation>Phobos_sandbox_exit</entryFromGlobalMapLocation>
+	<teleportPermissions>BOTH</teleportPermissions>
+	<places>
+		<place colour="#ffffff">GENERIC_IMPASSABLE</place>
+		<place colour="#000000">Phobos_sandbox_exit</place>
+		<place colour="#2d2d2d">Phobos_sandbox_corridor</place>
+	</places>
+</worldType>

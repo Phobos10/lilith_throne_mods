@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dialogueNodes>
+
+	<scene id="on">
+		<preParsingEffects><![CDATA[
+		]]></preParsingEffects>
+		<content folderPath="mods/Phobos/txt/encounters/edit_map/menu">NOTHING</content>
+		<secondsPassed minutes="true"><![CDATA[0]]></secondsPassed>
+		<continuesDialogue>false</continuesDialogue>
+		<travelDisabled>false</travelDisabled>
+		
+	</scene>
+	
+</dialogueNodes>

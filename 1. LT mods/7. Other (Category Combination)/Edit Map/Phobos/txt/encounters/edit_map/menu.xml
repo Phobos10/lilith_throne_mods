@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dialogue>
+
+	<htmlContent tag="DISPLAY"><![CDATA[
+		#IF(npc.isPlayer()==true)
+			#IF(pc.getWorldLocation().getId()=='Phobos_edit_map')
+				[##pc.setLocation(pc.getHomeCell())]
+			#ENDIF
+		#ENDIF	]]></htmlContent>
+	
+	<htmlContent tag="INSTRUCTION"><![CDATA[
+
+	]]></htmlContent>
+	
+	<htmlContent tag="NOTHING"><![CDATA[
+		It can be replaced with another place.
+	]]></htmlContent>
+	
+	<htmlContent tag="NOTHING1"><![CDATA[
+		It's best not to replace it. But in extreme cases, can return here through a teleport or using a code.<br><br>
+		
+		You can create a map of a different size by changing the [style.bold(map)] file.
+	]]></htmlContent>
+</dialogue>

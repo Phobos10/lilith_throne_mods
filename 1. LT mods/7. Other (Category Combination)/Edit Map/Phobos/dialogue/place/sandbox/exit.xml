@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dialogueNodes>
+
+	<scene id="on">
+		<preParsingEffects><![CDATA[
+		]]></preParsingEffects>
+		<content folderPath="mods/Phobos/txt/encounters/edit_map/menu">NOTHING1</content>
+		<secondsPassed minutes="true"><![CDATA[0]]></secondsPassed>
+		<continuesDialogue>false</continuesDialogue>
+		<travelDisabled>false</travelDisabled>
+		<responses>
+			<response>
+				<responseTabIndex><![CDATA[0]]></responseTabIndex>
+				<index><![CDATA[1]]></index>
+				<responseTitle><![CDATA[Home]]></responseTitle>
+				<responseTooltip><![CDATA[Back home.]]></responseTooltip>				
+				<nextDialogue>default</nextDialogue>
+				<effects><![CDATA[
+					[##pc.setLocation(pc.getHomeCell())]
+				]]></effects>
+			</response>
+		</responses>
+	</scene>
+	
+</dialogueNodes>
