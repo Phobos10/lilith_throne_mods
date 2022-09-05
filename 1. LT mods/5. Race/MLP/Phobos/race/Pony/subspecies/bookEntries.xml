@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookText>
+	
+	<htmlContent tag="BASIC_PONY"><![CDATA[
+	
+	]]></htmlContent>
+	
+	<htmlContent tag="ADVANCED_PONY"><![CDATA[
+
+	]]></htmlContent>
+	
+	<htmlContent tag="BASIC_PEGASUS"><![CDATA[
+	
+	]]></htmlContent>
+	
+	<htmlContent tag="ADVANCED_PEGASUS"><![CDATA[
+
+	]]></htmlContent>
+	
+	<htmlContent tag="BASIC_UNICORN"><![CDATA[
+	
+	]]></htmlContent>
+	
+	<htmlContent tag="ADVANCED_UNICORN"><![CDATA[
+
+	]]></htmlContent>
+	
+	<htmlContent tag="BASIC_ALICORN"><![CDATA[
+	
+	]]></htmlContent>
+	
+	<htmlContent tag="ADVANCED_ALICORN"><![CDATA[
+
+	]]></htmlContent>
+	
+	<htmlContent tag="BASIC_BATPONY"><![CDATA[
+	
+	]]></htmlContent>
+	
+	<htmlContent tag="ADVANCED_BATPONY"><![CDATA[
+
+	]]></htmlContent>
+	
+	
+</bookText>
