@@ -7,7 +7,7 @@
 	
 	<!-- The id of the race which this mouth belongs to.
 	This will almost always be the id of the race in which this type is found (in this case hyena). -->
-	<race>Phobos_Pony</race>
+	<race>Phobos_kobold</race>
 	
 	<!-- The id of the material covering this mouth.
 	This should always be left as 'MOUTH'.
@@ -15,7 +15,7 @@
 	<coveringType>MOUTH</coveringType>
 	
 	<!-- The id of the tongue that's associated with this mouth type. -->
-	<tongueType>Phobos_Pony_tongue</tongueType>
+	<tongueType>Phobos_kobold_tongue</tongueType>
 	
 	<!-- The singular names of this mouth.
 	One of the defined names will be chosen at random every time the name is displayed to the player. 
