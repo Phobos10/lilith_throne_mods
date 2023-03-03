@@ -1,6 +1,8 @@
 This is a [Google Drive](https://drive.google.com/drive/folders/1n7KAw_ACSoOeiUhKhrPPfzm_V6dIiIy7) mirror. Github is not prioritized for updates.
 ## FAQ
 If you have problems with the instruction below, complete test on [Google Drive](https://drive.google.com/drive/folders/1n7KAw_ACSoOeiUhKhrPPfzm_V6dIiIy7).
+### How to download one or more selected files to github
+Specify [here](https://downgit.github.io/#/home) the link to the folder with the mod or download the [extension](https://chrome.google.com/webstore/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn) for the chrome browser. 
 ### How install mod
 Place **Phobos** folder in **mods** folder.
 ### How get/chek mod in game
