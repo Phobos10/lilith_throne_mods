@@ -1,0 +1,3 @@
+Mod Name: No Fetishes
+Mod Category: Items
+Description: Removes all fetishes and sets desire level to neutral.
