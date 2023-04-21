@@ -88,6 +88,7 @@
 		<applyEffects><![CDATA[	
 			<p style='text-align:center; margin-top:0; padding-top:0;'>
 			  [##npc.clearFetishes()]
+			  [##npc.clearFetishDesires()]
 				[style.boldgood(Applied)]
 			</p>
 		]]></applyEffects>
