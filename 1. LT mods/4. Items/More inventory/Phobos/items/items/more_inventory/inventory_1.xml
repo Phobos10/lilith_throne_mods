@@ -21,7 +21,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[inventory 1]]></namePlural>
 		
 		<!-- The description/lore of this item. -->
-		<description><![CDATA[Opens inventory 1.]]></description> 
+		<description><![CDATA[Use the item to get instruction.]]></description> 
 		
 		<!-- How the item is used. This should be a single verb, and is used as the title of the action when using it. -->
 		<useDescriptor>use</useDescriptor>
@@ -86,16 +86,18 @@
 		If self-using the item, npc and npc2 will be the same character.
 		All of the returned text is displayed to the player. [#npc.incrementVaginaCapacity(1)] [#npc.incrementAssCapacity(1)] [#npc.incrementFaceCapacity(1)] -->
 		<applyEffects><![CDATA[	
-		<p style='text-align:center; margin-top:0; padding-top:0;'>
 			[##var outputChar = null]
 			[##function nameCheck(character) {if(outputChar == null && character.getName().equals('Inventory 1')) {outputChar=character;}}]
 			[##game.getAllNPCs().forEach(nameCheck)]
-		#IF(outputChar !== null )
-				[##game.openInventoryDialogue(outputChar,INVENTORY_INTERACTION_FULL_MANAGEMENT)]
-		#ELSE
-			Give any character name Inventory 1 or export the previous inventory in the city hall. Take your inventory and give it to another slave. There may be more NPCs in one room than this.
-		#ENDIF
-		</p>
+				#IF(outputChar !== null )
+					[##game.openInventoryDialogue(outputChar,INVENTORY_INTERACTION_FULL_MANAGEMENT)]
+				#ELSE
+					[style.bold(How to use:)] <br>
+					Give any character name [style.bold(Inventory 1)]<br><br>
+					[style.bold(Additionally:)]<br>
+					- Can import npc-inventory in  [style.bold(City Hall)] to transfer inventory to another game.<br>
+					- Can use the [style.bold(Pocket Dimension)] mod to unsolder the npc-inventory to another location. It can be returned by placing it in a free room through the [style.bold(People Manager)].
+				#ENDIF
 		]]></applyEffects>
 
 		<!-- Special item tags that apply to this item. Values can be found here: https://github.com/Innoxia/liliths-throne-public/blob/master/src/com/lilithsthrone/game/inventory/ItemTag.java -->
