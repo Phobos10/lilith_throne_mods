@@ -93,7 +93,7 @@
 					[##game.openInventoryDialogue(outputChar,INVENTORY_INTERACTION_FULL_MANAGEMENT)]
 				#ELSE
 					[style.bold(How to use:)] <br>
-					1. Give any character name [style.bold(Inventory 1)]<br>
+					1. Give any character name [style.bold(Inventory 3)]<br>
 					2. Use the item on yourself anywhere.<br><br>
 					[style.bold(Additionally:)]<br>
 					- Can import npc-inventory in  [style.bold(City Hall)] to transfer inventory to another game.<br>
