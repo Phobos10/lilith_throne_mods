@@ -163,7 +163,7 @@
 			char.getOccupation().isLowlife()==true &&
 			!char.getAffectionMap().containsKey("all_feral") &&
 			char.getRace().isFeralPartsAvailable()==true && 
-			npc.isUnique()==false) 
+			char.isUnique()==false) 
 			{
 				if (RND.nextInt(100)<=30) {
 						char.setFeral(char.getSubspecies());
