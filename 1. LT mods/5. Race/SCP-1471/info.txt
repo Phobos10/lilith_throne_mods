@@ -7,3 +7,4 @@ Features:
 - Vanilla book replaced by document on SCP (book in inventory and on the ground will be replaced by document).
 - Two interconnected combat move: disappear + sudden kick.
 - There is a body variant without fur.
+- Other things of little interest.
