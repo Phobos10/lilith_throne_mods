@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="6.svg"
+   viewBox="0 0 725.66931 725.66931"
+   id="svg21"
+   height=""
+   width=""
+   version="1.1">
+  <metadata
+     id="metadata27">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs25" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg21"
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:cy="362.83466"
+     inkscape:cx="362.83466"
+     inkscape:zoom="0.79650605"
+     showgrid="false"
+     id="namedview23"
+     inkscape:window-height="480"
+     inkscape:window-width="881"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     id="Layer1000">
+    <path
+       id="path2"
+       style="fill:none;stroke:#ffffff;stroke-width:10.0001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
+       d="m 269.8985,496.8255 v 44.8586 L 446.5752,691.3383 V 188.9118 L 269.8985,39.2576 v 197.6298" />
+    <path
+       id="path4"
+       style="fill:none;stroke:#ffffff;stroke-width:10.0001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
+       d="M 269.8985,431.0507 V 288.8932" />
+    <path
+       id="path6"
+       style="fill:none;stroke:#ffffff;stroke-width:10.0001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:20.0001, 30.0002, 20.0001, 30.0002"
+       d="m 358.2371,275.9539 2.4191,-3.3548 -2.4191,-0.1834" />
+    <path
+       id="path8"
+       style="fill:none;stroke:#ffffff;stroke-width:10.0001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
+       d="m 358.2371,272.4157 -66.6663,-5.0511 -50.8649,50.527 c -17.5382,16.3882 -44.6941,-7.4727 -27.0779,-27.0779 l 56.2705,-53.9263" />
+    <path
+       id="path10"
+       style="fill:none;stroke:#ffffff;stroke-width:10.0001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
+       d="m 358.2371,439.8559 -51.3345,-48.7995 c -5.1815,-11.4219 -5.768,-25.9061 0.9955,-45.2926 l 50.339,-69.8099 m -88.3386,-39.0665 13.1134,-12.5671 h 75.2252" />
+    <path
+       id="path12"
+       style="fill:none;stroke:#ffffff;stroke-width:10.0001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none"
+       d="m 257.6283,444.3127 49.2742,-53.2562 34.3425,34.3428 -53.7596,66.6944 -113.4742,-0.4767 c -30.2258,0.0324 -32.2706,-45.7407 0,-47.3043 z" />
+    <path
+       id="path14"
+       style="fill:none;stroke:#ffffff;stroke-width:10.0001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:20.0001, 10.0001, 20.0001, 10.0001"
+       d="m 358.2371,439.8559 29.2961,27.8496 0.4978,110.4936 c 5.0164,34.5677 46.2339,28.1789 48.2774,0 l -0.1477,-140.8456 -55.5956,-51.772 65.6988,-98.5484 c 6.304,-13.6043 3.9819,-25.8814 -6.9678,-36.8311 L 393.008,224.3203 h -34.7709" />
+    <path
+       id="path16"
+       style="fill:none;stroke:#ffffff;stroke-width:10.0001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:20.0001, 10.0001, 20.0001, 10.0001"
+       d="m 446.5752,287.3228 -0.3113,-0.2897 m -25.3834,40.3152 49.2741,44.297 77.6444,0.4978 c 27.644,-3.2395 26.5708,-37.499 0,-41.4207 l -58.7308,-3.8719 -42.493,-39.5277" />
+    <path
+       id="path18"
+       style="fill:none;stroke:#ffffff;stroke-width:10.0001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:20.0001, 10.0001, 20.0001, 10.0001"
+       d="m 467.1688,130.0022 a 45.0437,45.0437 0 0 1 45.0437,45.0438 45.0437,45.0437 0 1 1 -45.0437,-45.0438 z" />
+  </g>
+</svg>
