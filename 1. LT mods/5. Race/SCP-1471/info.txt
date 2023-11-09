@@ -1,0 +1,9 @@
+Mod Name: SCP-1471
+Mod Category: Race
+Description: Now it's race.
+This time I didn't use my template to quickly create a race.
+Features:
+- SCP is always naked unless it is a modifiable outfit.
+- Vanilla book replaced by document on SCP (book in inventory and on the ground will be replaced by document).
+- Two interconnected combat move: disappear + sudden kick.
+- There is a body variant without fur.
