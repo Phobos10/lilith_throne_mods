@@ -13,9 +13,7 @@
 		<modifier>SHAGGY</modifier>
 	</naturalCoveringModifiers>
 	
-	<extraCoveringModifiers>
-		<modifier>SHORT</modifier>
-	</extraCoveringModifiers>
+	<extraCoveringModifiers/>
 	
 	<naturalPatterns>
 		<pattern weighting="1">NONE</pattern>

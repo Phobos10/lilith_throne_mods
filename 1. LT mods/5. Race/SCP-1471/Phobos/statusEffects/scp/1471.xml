@@ -171,29 +171,34 @@
 	<applyEffect interval="0"><![CDATA[
 		[##function doThing(char) 
 			{
-				if (char.getRace()==RACE_Phobos_scp_1471 && 
-				!char.getAffectionMap().containsKey("SCP-1471"))
+				if(char.getFaceType()==FACE_TYPE_Phobos_scp_1471_face && 
+				char.getLipSize().getValue()!==0)
 				{
-					if(char.getOccupation().isLowlife()==true &&
-					char.isSlave()==false)
-					{			
-					char.setName('Unknown');
-					char.setSurname('');	
-					char.setFaceDepth(3);										
-					char.setHairStyle(lumi.getHairStyle());						
-					char.getAffectionMap().put("SCP-1471",1);
-					}
-					if(char.getItemCount(itemGen.generateItem(ITEM_BOOK_Phobos_scp_1471_subspecies_1471))!==0)
-					{
-					char.addItem(itemGen.generateItem(ITEM_Phobos_race_scp_1471), char.getItemCount(itemGen.generateItem(ITEM_BOOK_Phobos_scp_1471_subspecies_1471)));
-					char.removeItem(itemGen.generateItem(ITEM_BOOK_Phobos_scp_1471_subspecies_1471),char.getItemCount(itemGen.generateItem(ITEM_Phobos_race_scp_1471)));
-					}
-						if(char.getItemCount(itemGen.generateItem(ITEM_BOOK_Phobos_scp_1471_subspecies_1471))!=0)
-						{
-						char.addItem(itemGen.generateItem(ITEM_Phobos_race_scp_1471), char.getItemCount(itemGen.generateItem(ITEM_BOOK_Phobos_scp_1471_subspecies_1471)),false,false);
-						char.removeItem(itemGen.generateItem(ITEM_BOOK_Phobos_scp_1471_subspecies_1471), char.getItemCount(itemGen.generateItem(ITEM_Phobos_race_scp_1471)));
-						}
+				char.setLipSize(0);
 				}
+					if (char.getRace()==RACE_Phobos_scp_1471 && 
+					!char.getAffectionMap().containsKey("SCP-1471"))
+					{
+						if(char.getOccupation().isLowlife()==true &&
+						char.isSlave()==false)
+						{			
+						char.setName('Unknown');
+						char.setSurname('');	
+						char.setFaceDepth(3);										
+						char.setHairStyle(lumi.getHairStyle());						
+						char.getAffectionMap().put("SCP-1471",1);	
+						}
+						if(char.getItemCount(itemGen.generateItem(ITEM_BOOK_Phobos_scp_1471_subspecies_1471))!==0)
+						{
+						char.addItem(itemGen.generateItem(ITEM_Phobos_race_scp_1471), char.getItemCount(itemGen.generateItem(ITEM_BOOK_Phobos_scp_1471_subspecies_1471)));
+						char.removeItem(itemGen.generateItem(ITEM_BOOK_Phobos_scp_1471_subspecies_1471),char.getItemCount(itemGen.generateItem(ITEM_Phobos_race_scp_1471)));
+						}
+							if(char.getItemCount(itemGen.generateItem(ITEM_BOOK_Phobos_scp_1471_subspecies_1471))!=0)
+							{
+							char.addItem(itemGen.generateItem(ITEM_Phobos_race_scp_1471), char.getItemCount(itemGen.generateItem(ITEM_BOOK_Phobos_scp_1471_subspecies_1471)),false,false);
+							char.removeItem(itemGen.generateItem(ITEM_BOOK_Phobos_scp_1471_subspecies_1471), char.getItemCount(itemGen.generateItem(ITEM_Phobos_race_scp_1471)));
+							}
+					}
 			}]
 		[##game.getCharactersPresent().forEach(doThing)]
 		
@@ -207,14 +212,16 @@
 			[##game.getActiveWorld().getCell(npc.getLocation()).getInventory().removeItem(itemGen.generateItem(ITEM_BOOK_Phobos_scp_1471_subspecies_1471), game.getActiveWorld().getCell(npc.getLocation()).getInventory().getItemCount(itemGen.generateItem(ITEM_Phobos_race_scp_1471)))]
 		#ENDIF
 		
-			#IF(npc.getFaceType()==FACE_TYPE_Phobos_scp_1471_face)
-				[##npc.setLipSize(0)]
-				#IF(npc.getHairStyle()!=lumi.getHairStyle() && 
+			#IF(npc.getFaceType()==FACE_TYPE_Phobos_scp_1471_face &&
+			npc.getLipSize().getValue()!==0)
+				[##npc.setLipSize(0)]			
+			#ENDIF		
+				#IF(npc.getHairType()==HAIR_TYPE_Phobos_scp_1471_hair && 
+				npc.getHairStyle()!=lumi.getHairStyle() && 
 				!npc.getAffectionMap().containsKey("SCP-1471"))
 					[##npc.setHairStyle(lumi.getHairStyle())]
 					[##npc.getAffectionMap().put("SCP-1471",1)]
-				#ENDIF				
-			#ENDIF		
+				#ENDIF	
 	]]></applyEffect>
 	
 	<!-- 
